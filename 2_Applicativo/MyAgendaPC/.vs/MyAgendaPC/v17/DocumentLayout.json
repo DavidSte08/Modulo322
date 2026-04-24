@@ -1,13 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ska997\\source\\repos\\Modulo322\\2_Applicativo\\MyAgendaPC\\",
+  "WorkspaceRootPath": "C:\\DatiAllievo\\Matteo\\GitHub\\Modulo322\\2_Applicativo\\MyAgendaPC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{91E78E34-79A2-4D99-99A6-AAD917E9C52C}|MyAgendaPC.csproj|c:\\users\\ska997\\source\\repos\\modulo322\\2_applicativo\\myagendapc\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{91E78E34-79A2-4D99-99A6-AAD917E9C52C}|MyAgendaPC.csproj|c:\\datiallievo\\matteo\\github\\modulo322\\2_applicativo\\myagendapc\\settingspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{91E78E34-79A2-4D99-99A6-AAD917E9C52C}|MyAgendaPC.csproj|solutionrelative:settingspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91E78E34-79A2-4D99-99A6-AAD917E9C52C}|MyAgendaPC.csproj|c:\\datiallievo\\matteo\\github\\modulo322\\2_applicativo\\myagendapc\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{91E78E34-79A2-4D99-99A6-AAD917E9C52C}|MyAgendaPC.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{91E78E34-79A2-4D99-99A6-AAD917E9C52C}|MyAgendaPC.csproj|c:\\users\\ska997\\source\\repos\\modulo322\\2_applicativo\\myagendapc\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{91E78E34-79A2-4D99-99A6-AAD917E9C52C}|MyAgendaPC.csproj|c:\\datiallievo\\matteo\\github\\modulo322\\2_applicativo\\myagendapc\\myagendapc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{91E78E34-79A2-4D99-99A6-AAD917E9C52C}|MyAgendaPC.csproj|solutionrelative:myagendapc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91E78E34-79A2-4D99-99A6-AAD917E9C52C}|MyAgendaPC.csproj|c:\\datiallievo\\matteo\\github\\modulo322\\2_applicativo\\myagendapc\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{91E78E34-79A2-4D99-99A6-AAD917E9C52C}|MyAgendaPC.csproj|solutionrelative:appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -31,10 +39,36 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "SettingsPage.xaml",
+              "DocumentMoniker": "C:\\DatiAllievo\\Matteo\\GitHub\\Modulo322\\2_Applicativo\\MyAgendaPC\\SettingsPage.xaml",
+              "RelativeDocumentMoniker": "SettingsPage.xaml",
+              "ToolTip": "C:\\DatiAllievo\\Matteo\\GitHub\\Modulo322\\2_Applicativo\\MyAgendaPC\\SettingsPage.xaml",
+              "RelativeToolTip": "SettingsPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-24T12:13:41.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MyAgendaPC",
+              "DocumentMoniker": "C:\\DatiAllievo\\Matteo\\GitHub\\Modulo322\\2_Applicativo\\MyAgendaPC\\MyAgendaPC.csproj",
+              "RelativeDocumentMoniker": "MyAgendaPC.csproj",
+              "ToolTip": "C:\\DatiAllievo\\Matteo\\GitHub\\Modulo322\\2_Applicativo\\MyAgendaPC\\MyAgendaPC.csproj",
+              "RelativeToolTip": "MyAgendaPC.csproj",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-24T12:12:29.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\ska997\\source\\repos\\Modulo322\\2_Applicativo\\MyAgendaPC\\App.xaml",
+              "DocumentMoniker": "C:\\DatiAllievo\\Matteo\\GitHub\\Modulo322\\2_Applicativo\\MyAgendaPC\\App.xaml",
               "RelativeDocumentMoniker": "App.xaml",
-              "ToolTip": "C:\\Users\\ska997\\source\\repos\\Modulo322\\2_Applicativo\\MyAgendaPC\\App.xaml",
+              "ToolTip": "C:\\DatiAllievo\\Matteo\\GitHub\\Modulo322\\2_Applicativo\\MyAgendaPC\\App.xaml",
               "RelativeToolTip": "App.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
@@ -43,16 +77,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "AppShell.xaml",
-              "DocumentMoniker": "C:\\Users\\ska997\\source\\repos\\Modulo322\\2_Applicativo\\MyAgendaPC\\AppShell.xaml",
+              "DocumentMoniker": "C:\\DatiAllievo\\Matteo\\GitHub\\Modulo322\\2_Applicativo\\MyAgendaPC\\AppShell.xaml",
               "RelativeDocumentMoniker": "AppShell.xaml",
-              "ToolTip": "C:\\Users\\ska997\\source\\repos\\Modulo322\\2_Applicativo\\MyAgendaPC\\AppShell.xaml",
+              "ToolTip": "C:\\DatiAllievo\\Matteo\\GitHub\\Modulo322\\2_Applicativo\\MyAgendaPC\\AppShell.xaml",
               "RelativeToolTip": "AppShell.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-17T13:58:30.455Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-17T13:58:30.455Z"
             }
           ]
         }
