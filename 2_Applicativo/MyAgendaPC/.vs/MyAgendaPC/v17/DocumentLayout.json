@@ -3,15 +3,15 @@
   "WorkspaceRootPath": "C:\\DatiAllievo\\Matteo\\GitHub\\Modulo322\\2_Applicativo\\MyAgendaPC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{91E78E34-79A2-4D99-99A6-AAD917E9C52C}|MyAgendaPC.csproj|c:\\datiallievo\\matteo\\github\\modulo322\\2_applicativo\\myagendapc\\settingspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{91E78E34-79A2-4D99-99A6-AAD917E9C52C}|MyAgendaPC.csproj|solutionrelative:settingspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\DatiAllievo\\Matteo\\GitHub\\Modulo322\\2_Applicativo\\MyAgendaPC\\SettingsPage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SettingsPage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\cpa450\\.nuget\\packages\\microsoft.maui.resizetizer\\8.0.100\\buildTransitive\\Microsoft.Maui.Resizetizer.After.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{91E78E34-79A2-4D99-99A6-AAD917E9C52C}|MyAgendaPC.csproj|c:\\datiallievo\\matteo\\github\\modulo322\\2_applicativo\\myagendapc\\settingspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91E78E34-79A2-4D99-99A6-AAD917E9C52C}|MyAgendaPC.csproj|solutionrelative:settingspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\DatiAllievo\\Matteo\\GitHub\\Modulo322\\2_Applicativo\\MyAgendaPC\\SettingsPage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SettingsPage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -63,7 +63,7 @@
               "RelativeDocumentMoniker": "SettingsPage.xaml",
               "ToolTip": "C:\\DatiAllievo\\Matteo\\GitHub\\Modulo322\\2_Applicativo\\MyAgendaPC\\SettingsPage.xaml",
               "RelativeToolTip": "SettingsPage.xaml",
-              "ViewState": "AgIAAJ0AAAAAAAAAAAAAAP0AAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAO4AAAAAAAAAAAAWwOIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-04-24T12:13:41.181Z",
               "EditorCaption": ""
