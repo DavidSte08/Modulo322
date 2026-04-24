@@ -17,10 +17,202 @@
             </Border.Shadow>
 
             <VerticalStackLayout>
-                <!-- Esempio: Fuso Orario -->
+                <!-- Lingua -->
                 <Grid Style="{StaticResource MenuRowStyle}" ColumnDefinitions="Auto, *, Auto">
                     <!-- Icona a sinistra -->
-                    <Image Source="clock_icon.png" 
+                    <Image Source="language-icon.png" 
+                   WidthRequest="24" 
+                   HeightRequest="24" 
+                   VerticalOptions="Center" />
+
+                    <!-- Testo Centrale -->
+                    <Label Grid.Column="1" 
+                   Text="Lingua" 
+                   VerticalOptions="Center" 
+                   Margin="15,0"
+                   FontSize="16"
+                   TextColor="Black" />
+
+                    <!-- Freccia a destra -->
+                    <Image Grid.Column="2" 
+                   Source="chevron_right.png" 
+                   WidthRequest="12" 
+                   Opacity="0.5"
+                   VerticalOptions="Center" />
+
+                    <!-- Gesture Recognizer per il click -->
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding NavigateToTimeZoneCommand}" />
+                    </Grid.GestureRecognizers>
+                </Grid>
+
+                <!-- Separatore -->
+                <BoxView HeightRequest="1" Color="#EEEEEE" Margin="15,0" />
+                
+                <!-- Modifica Informazioni -->
+                <Grid Style="{StaticResource MenuRowStyle}" ColumnDefinitions="Auto, *, Auto">
+                    <!-- Icona a sinistra -->
+                    <Image Source="user-icon.png" 
+                   WidthRequest="24" 
+                   HeightRequest="24" 
+                   VerticalOptions="Center" />
+
+                    <!-- Testo Centrale -->
+                    <Label Grid.Column="1" 
+                   Text="Modifica Informazioni" 
+                   VerticalOptions="Center" 
+                   Margin="15,0"
+                   FontSize="16"
+                   TextColor="Black" />
+
+                    <!-- Freccia a destra -->
+                    <Image Grid.Column="2" 
+                   Source="chevron_right.png" 
+                   WidthRequest="12" 
+                   Opacity="0.5"
+                   VerticalOptions="Center" />
+
+                    <!-- Gesture Recognizer per il click -->
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding NavigateToTimeZoneCommand}" />
+                    </Grid.GestureRecognizers>
+                </Grid>
+
+                <!-- Separatore -->
+                <BoxView HeightRequest="1" Color="#EEEEEE" Margin="15,0" />
+
+                <!-- Personalizzazione -->
+                <Grid Style="{StaticResource MenuRowStyle}" ColumnDefinitions="Auto, *, Auto">
+                    <!-- Icona a sinistra -->
+                    <Image Source="personalizza-icon.png" 
+                   WidthRequest="24" 
+                   HeightRequest="24" 
+                   VerticalOptions="Center" />
+
+                    <!-- Testo Centrale -->
+                    <Label Grid.Column="1" 
+                   Text="Personalizzazione" 
+                   VerticalOptions="Center" 
+                   Margin="15,0"
+                   FontSize="16"
+                   TextColor="Black" />
+
+                    <!-- Freccia a destra -->
+                    <Image Grid.Column="2" 
+                   Source="chevron_right.png" 
+                   WidthRequest="12" 
+                   Opacity="0.5"
+                   VerticalOptions="Center" />
+
+                    <!-- Gesture Recognizer per il click -->
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding NavigateToTimeZoneCommand}" />
+                    </Grid.GestureRecognizers>
+                </Grid>
+
+                <!-- Separatore -->
+                <BoxView HeightRequest="1" Color="#EEEEEE" Margin="15,0" />
+
+                <!-- Impostazioni di default -->
+                <Grid Style="{StaticResource MenuRowStyle}" ColumnDefinitions="Auto, *, Auto">
+                    <!-- Icona a sinistra -->
+                    <Image Source="settings-icon.png" 
+                   WidthRequest="24" 
+                   HeightRequest="24" 
+                   VerticalOptions="Center" />
+
+                    <!-- Testo Centrale -->
+                    <Label Grid.Column="1" 
+                   Text="Impostazioni di default" 
+                   VerticalOptions="Center" 
+                   Margin="15,0"
+                   FontSize="16"
+                   TextColor="Black" />
+
+                    <!-- Freccia a destra -->
+                    <Image Grid.Column="2" 
+                   Source="chevron_right.png" 
+                   WidthRequest="12" 
+                   Opacity="0.5"
+                   VerticalOptions="Center" />
+
+                    <!-- Gesture Recognizer per il click -->
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding NavigateToTimeZoneCommand}" />
+                    </Grid.GestureRecognizers>
+                </Grid>
+
+                <!-- Separatore -->
+                <BoxView HeightRequest="1" Color="#EEEEEE" Margin="15,0" />
+
+                <!-- Notifiche -->
+                <Grid Style="{StaticResource MenuRowStyle}" ColumnDefinitions="Auto, *, Auto">
+                    <!-- Icona a sinistra -->
+                    <Image Source="notification-icon.png" 
+                   WidthRequest="24" 
+                   HeightRequest="24" 
+                   VerticalOptions="Center" />
+
+                    <!-- Testo Centrale -->
+                    <Label Grid.Column="1" 
+                   Text="Notifiche" 
+                   VerticalOptions="Center" 
+                   Margin="15,0"
+                   FontSize="16"
+                   TextColor="Black" />
+
+                    <!-- Freccia a destra -->
+                    <Image Grid.Column="2" 
+                   Source="chevron_right.png" 
+                   WidthRequest="12" 
+                   Opacity="0.5"
+                   VerticalOptions="Center" />
+
+                    <!-- Gesture Recognizer per il click -->
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding NavigateToTimeZoneCommand}" />
+                    </Grid.GestureRecognizers>
+                </Grid>
+
+                <!-- Separatore -->
+                <BoxView HeightRequest="1" Color="#EEEEEE" Margin="15,0" />
+
+                <!-- Archiviazione -->
+                <Grid Style="{StaticResource MenuRowStyle}" ColumnDefinitions="Auto, *, Auto">
+                    <!-- Icona a sinistra -->
+                    <Image Source="archive-icon.png" 
+                   WidthRequest="24" 
+                   HeightRequest="24" 
+                   VerticalOptions="Center" />
+
+                    <!-- Testo Centrale -->
+                    <Label Grid.Column="1" 
+                   Text="Archiviazione" 
+                   VerticalOptions="Center" 
+                   Margin="15,0"
+                   FontSize="16"
+                   TextColor="Black" />
+
+                    <!-- Freccia a destra -->
+                    <Image Grid.Column="2" 
+                   Source="chevron_right.png" 
+                   WidthRequest="12" 
+                   Opacity="0.5"
+                   VerticalOptions="Center" />
+
+                    <!-- Gesture Recognizer per il click -->
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding NavigateToTimeZoneCommand}" />
+                    </Grid.GestureRecognizers>
+                </Grid>
+
+                <!-- Separatore -->
+                <BoxView HeightRequest="1" Color="#EEEEEE" Margin="15,0" />
+
+                <!-- Fuso Orario (template di Google AI)-->
+                <Grid Style="{StaticResource MenuRowStyle}" ColumnDefinitions="Auto, *, Auto">
+                    <!-- Icona a sinistra -->
+                    <Image Source="clock-icon.png" 
                    WidthRequest="24" 
                    HeightRequest="24" 
                    VerticalOptions="Center" />
@@ -49,7 +241,69 @@
                 <!-- Separatore -->
                 <BoxView HeightRequest="1" Color="#EEEEEE" Margin="15,0" />
 
-                <!-- Aggiungi qui le altre voci seguendo lo stesso schema -->
+                <!-- Widget -->
+                <Grid Style="{StaticResource MenuRowStyle}" ColumnDefinitions="Auto, *, Auto">
+                    <!-- Icona a sinistra -->
+                    <Image Source="widgets-icon.png" 
+                   WidthRequest="24" 
+                   HeightRequest="24" 
+                   VerticalOptions="Center" />
+
+                    <!-- Testo Centrale -->
+                    <Label Grid.Column="1" 
+                   Text="Widget" 
+                   VerticalOptions="Center" 
+                   Margin="15,0"
+                   FontSize="16"
+                   TextColor="Black" />
+
+                    <!-- Freccia a destra -->
+                    <Image Grid.Column="2" 
+                   Source="chevron_right.png" 
+                   WidthRequest="12" 
+                   Opacity="0.5"
+                   VerticalOptions="Center" />
+
+                    <!-- Gesture Recognizer per il click -->
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding NavigateToTimeZoneCommand}" />
+                    </Grid.GestureRecognizers>
+                </Grid>
+
+                <!-- Separatore -->
+                <BoxView HeightRequest="1" Color="#EEEEEE" Margin="15,0" />
+
+                <!-- Accesso e password -->
+                <Grid Style="{StaticResource MenuRowStyle}" ColumnDefinitions="Auto, *, Auto">
+                    <!-- Icona a sinistra -->
+                    <Image Source="access-icon.png" 
+                   WidthRequest="24" 
+                   HeightRequest="24" 
+                   VerticalOptions="Center" />
+
+                    <!-- Testo Centrale -->
+                    <Label Grid.Column="1" 
+                   Text="Accesso e Password" 
+                   VerticalOptions="Center" 
+                   Margin="15,0"
+                   FontSize="16"
+                   TextColor="Black" />
+
+                    <!-- Freccia a destra -->
+                    <Image Grid.Column="2" 
+                   Source="chevron_right.png" 
+                   WidthRequest="12" 
+                   Opacity="0.5"
+                   VerticalOptions="Center" />
+
+                    <!-- Gesture Recognizer per il click -->
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding NavigateToTimeZoneCommand}" />
+                    </Grid.GestureRecognizers>
+                </Grid>
+
+                <!-- Separatore -->
+                <BoxView HeightRequest="1" Color="#EEEEEE" Margin="15,0" />
 
             </VerticalStackLayout>
         </Border>
