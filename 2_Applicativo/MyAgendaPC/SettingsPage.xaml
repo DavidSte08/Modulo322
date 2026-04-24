@@ -7,6 +7,51 @@
         <Label Text="Impostazioni"
                FontSize="24"
                HorizontalOptions="Center"/>
-        
+        <Border BackgroundColor="White" 
+        StrokeShape="RoundRectangle 20"
+        Margin="20"
+        Padding="0"
+        StrokeThickness="0">
+            <Border.Shadow>
+                <Shadow Brush="Black" Offset="0,2" Opacity="0.1" Radius="10" />
+            </Border.Shadow>
+
+            <VerticalStackLayout>
+                <!-- Esempio: Fuso Orario -->
+                <Grid Style="{StaticResource MenuRowStyle}" ColumnDefinitions="Auto, *, Auto">
+                    <!-- Icona a sinistra -->
+                    <Image Source="clock_icon.png" 
+                   WidthRequest="24" 
+                   HeightRequest="24" 
+                   VerticalOptions="Center" />
+
+                    <!-- Testo Centrale -->
+                    <Label Grid.Column="1" 
+                   Text="Fuso orario" 
+                   VerticalOptions="Center" 
+                   Margin="15,0"
+                   FontSize="16"
+                   TextColor="Black" />
+
+                    <!-- Freccia a destra -->
+                    <Image Grid.Column="2" 
+                   Source="chevron_right.png" 
+                   WidthRequest="12" 
+                   Opacity="0.5"
+                   VerticalOptions="Center" />
+
+                    <!-- Gesture Recognizer per il click -->
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding NavigateToTimeZoneCommand}" />
+                    </Grid.GestureRecognizers>
+                </Grid>
+
+                <!-- Separatore -->
+                <BoxView HeightRequest="1" Color="#EEEEEE" Margin="15,0" />
+
+                <!-- Aggiungi qui le altre voci seguendo lo stesso schema -->
+
+            </VerticalStackLayout>
+        </Border>
     </VerticalStackLayout>
 </ContentPage>
