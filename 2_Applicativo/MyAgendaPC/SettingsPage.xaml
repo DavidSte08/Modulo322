@@ -4,9 +4,9 @@
              x:Class="MyAgendaPC.SettingsPage"
              Title="SettingsPage">
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <Label Text="Impostazioni"
+               FontSize="24"
+               HorizontalOptions="Center"/>
+        
     </VerticalStackLayout>
 </ContentPage>
