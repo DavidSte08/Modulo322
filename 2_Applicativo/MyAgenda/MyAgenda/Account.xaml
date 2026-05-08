@@ -4,13 +4,11 @@
              x:Class="MyAgenda.Account"
              Title="Account">
     <VerticalStackLayout>
-        
         <ImageButton Source="home_icon.png" 
                      WidthRequest="50" 
                      HeightRequest="50" 
                      Clicked="OnHomeClicked"
                      HorizontalOptions="Start" />
-
         
         <Frame HeightRequest="100"
                    WidthRequest="100"
@@ -21,7 +19,7 @@
                    BorderColor="Gray"
                    Margin="0,0,0,0">
 
-            <Image Source="superteo08_logo.png"
+            <Image Source="melodie.png"
                    WidthRequest="100"
                    HeightRequest="100"
                    Aspect="AspectFill"
@@ -32,16 +30,15 @@
                FontSize="50"
                HorizontalOptions="Center"/>
         
-        
         <VerticalStackLayout>
             <Label Text="Impostazioni"
                FontSize="24"
                HorizontalOptions="Center"/>
             <Border BackgroundColor="White" 
-        StrokeShape="RoundRectangle 20"
-        Margin="20"
-        Padding="0"
-        StrokeThickness="0">
+                StrokeShape="RoundRectangle 20"
+                Margin="20"
+                Padding="0"
+                StrokeThickness="0">
                 <Border.Shadow>
                     <Shadow Brush="Black" Offset="0,2" Opacity="0.1" Radius="10" />
                 </Border.Shadow>
@@ -57,18 +54,18 @@
 
                         <!-- Testo Centrale -->
                         <Label Grid.Column="1" 
-                   Text="Lingua" 
-                   VerticalOptions="Center" 
-                   Margin="10,0"
-                   FontSize="16"
-                   TextColor="Black" />
+                           Text="Lingua" 
+                           VerticalOptions="Center" 
+                           Margin="10,0"
+                           FontSize="16"
+                           TextColor="Black" /> 
 
                         <!-- Freccia a destra -->
                         <Image Grid.Column="2" 
-                   Source="chevron_right.png" 
-                   WidthRequest="12" 
-                   Opacity="0.5"
-                   VerticalOptions="Center" />
+                           Source="chevron_right.png" 
+                           WidthRequest="12" 
+                           Opacity="0.5"
+                           VerticalOptions="Center" />
 
                         <!-- Gesture Recognizer per il click -->
                         <Grid.GestureRecognizers>
@@ -83,24 +80,24 @@
                     <Grid Style="{StaticResource MenuRowStyle}" ColumnDefinitions="Auto, *, Auto">
                         <!-- Icona a sinistra -->
                         <Image Source="user_icon.png" 
-                   WidthRequest="24" 
-                   HeightRequest="24" 
-                   VerticalOptions="Center" />
+                           WidthRequest="24" 
+                           HeightRequest="24" 
+                           VerticalOptions="Center" />
 
                         <!-- Testo Centrale -->
                         <Label Grid.Column="1" 
-                   Text="Modifica Informazioni" 
-                   VerticalOptions="Center" 
-                   Margin="10,0"
-                   FontSize="16"
-                   TextColor="Black" />
+                           Text="Modifica Informazioni" 
+                           VerticalOptions="Center" 
+                           Margin="10,0"
+                           FontSize="16"
+                           TextColor="Black" />
 
                         <!-- Freccia a destra -->
                         <Image Grid.Column="2" 
-                   Source="chevron_right.png" 
-                   WidthRequest="12" 
-                   Opacity="0.5"
-                   VerticalOptions="Center" />
+                           Source="chevron_right.png" 
+                           WidthRequest="12" 
+                           Opacity="0.5"
+                           VerticalOptions="Center" />
 
                         <!-- Gesture Recognizer per il click -->
                         <Grid.GestureRecognizers>
@@ -115,24 +112,24 @@
                     <Grid Style="{StaticResource MenuRowStyle}" ColumnDefinitions="Auto, *, Auto">
                         <!-- Icona a sinistra -->
                         <Image Source="personalizza_icon.png" 
-                   WidthRequest="24" 
-                   HeightRequest="24" 
-                   VerticalOptions="Center" />
+                           WidthRequest="24" 
+                           HeightRequest="24" 
+                           VerticalOptions="Center" />
 
                         <!-- Testo Centrale -->
                         <Label Grid.Column="1" 
-                   Text="Personalizzazione" 
-                   VerticalOptions="Center" 
-                   Margin="10,0"
-                   FontSize="16"
-                   TextColor="Black" />
+                           Text="Personalizzazione" 
+                           VerticalOptions="Center" 
+                           Margin="10,0"
+                           FontSize="16"
+                           TextColor="Black" />
 
                         <!-- Freccia a destra -->
                         <Image Grid.Column="2" 
-                   Source="chevron_right.png" 
-                   WidthRequest="12" 
-                   Opacity="0.5"
-                   VerticalOptions="Center" />
+                           Source="chevron_right.png" 
+                           WidthRequest="12" 
+                           Opacity="0.5"
+                           VerticalOptions="Center" />
 
                         <!-- Gesture Recognizer per il click -->
                         <Grid.GestureRecognizers>
@@ -147,24 +144,24 @@
                     <Grid Style="{StaticResource MenuRowStyle}" ColumnDefinitions="Auto, *, Auto">
                         <!-- Icona a sinistra -->
                         <Image Source="settings_icon.png" 
-                   WidthRequest="24" 
-                   HeightRequest="24" 
-                   VerticalOptions="Center" />
+                           WidthRequest="24" 
+                           HeightRequest="24" 
+                           VerticalOptions="Center" />
 
                         <!-- Testo Centrale -->
                         <Label Grid.Column="1" 
-                   Text="Impostazioni di default" 
-                   VerticalOptions="Center" 
-                   Margin="10,0"
-                   FontSize="16"
-                   TextColor="Black" />
+                           Text="Impostazioni di default" 
+                           VerticalOptions="Center" 
+                           Margin="10,0"
+                           FontSize="16"
+                           TextColor="Black" />
 
                         <!-- Freccia a destra -->
                         <Image Grid.Column="2" 
-                   Source="chevron_right.png" 
-                   WidthRequest="12" 
-                   Opacity="0.5"
-                   VerticalOptions="Center" />
+                           Source="chevron_right.png" 
+                           WidthRequest="12" 
+                           Opacity="0.5"
+                           VerticalOptions="Center" />
 
                         <!-- Gesture Recognizer per il click -->
                         <Grid.GestureRecognizers>
@@ -179,24 +176,24 @@
                     <Grid Style="{StaticResource MenuRowStyle}" ColumnDefinitions="Auto, *, Auto">
                         <!-- Icona a sinistra -->
                         <Image Source="notification_icon.png" 
-                   WidthRequest="24" 
-                   HeightRequest="24" 
-                   VerticalOptions="Center" />
+                           WidthRequest="24" 
+                           HeightRequest="24" 
+                           VerticalOptions="Center" />
 
                         <!-- Testo Centrale -->
                         <Label Grid.Column="1" 
-                   Text="Notifiche" 
-                   VerticalOptions="Center" 
-                   Margin="10,0"
-                   FontSize="16"
-                   TextColor="Black" />
+                           Text="Notifiche" 
+                           VerticalOptions="Center" 
+                           Margin="10,0"
+                           FontSize="16"
+                           TextColor="Black" />
 
                         <!-- Freccia a destra -->
                         <Image Grid.Column="2" 
-                   Source="chevron_right.png" 
-                   WidthRequest="12" 
-                   Opacity="0.5"
-                   VerticalOptions="Center" />
+                           Source="chevron_right.png" 
+                           WidthRequest="12" 
+                           Opacity="0.5"
+                           VerticalOptions="Center" />
 
                         <!-- Gesture Recognizer per il click -->
                         <Grid.GestureRecognizers>
@@ -211,24 +208,24 @@
                     <Grid Style="{StaticResource MenuRowStyle}" ColumnDefinitions="Auto, *, Auto">
                         <!-- Icona a sinistra -->
                         <Image Source="archive_icon.png" 
-                   WidthRequest="24" 
-                   HeightRequest="24" 
-                   VerticalOptions="Center" />
+                           WidthRequest="24" 
+                           HeightRequest="24" 
+                           VerticalOptions="Center" />
 
                         <!-- Testo Centrale -->
                         <Label Grid.Column="1" 
-                   Text="Archiviazione" 
-                   VerticalOptions="Center" 
-                   Margin="10,0"
-                   FontSize="16"
-                   TextColor="Black" />
+                           Text="Archiviazione" 
+                           VerticalOptions="Center" 
+                           Margin="10,0"
+                           FontSize="16"
+                           TextColor="Black" />
 
                         <!-- Freccia a destra -->
                         <Image Grid.Column="2" 
-                   Source="chevron_right.png" 
-                   WidthRequest="12" 
-                   Opacity="0.5"
-                   VerticalOptions="Center" />
+                           Source="chevron_right.png" 
+                           WidthRequest="12" 
+                           Opacity="0.5"
+                           VerticalOptions="Center" /> 
 
                         <!-- Gesture Recognizer per il click -->
                         <Grid.GestureRecognizers>
@@ -243,24 +240,24 @@
                     <Grid Style="{StaticResource MenuRowStyle}" ColumnDefinitions="Auto, *, Auto">
                         <!-- Icona a sinistra -->
                         <Image Source="clock_icon.png" 
-                   WidthRequest="24" 
-                   HeightRequest="24" 
-                   VerticalOptions="Center" />
-
+                           WidthRequest="24" 
+                           HeightRequest="24" 
+                           VerticalOptions="Center" />
+ 
                         <!-- Testo Centrale -->
                         <Label Grid.Column="1" 
-                   Text="Fuso orario" 
-                   VerticalOptions="Center" 
-                   Margin="10,0"
-                   FontSize="16"
-                   TextColor="Black" />
+                           Text="Fuso orario" 
+                           VerticalOptions="Center" 
+                           Margin="10,0"
+                           FontSize="16"
+                           TextColor="Black" />
 
                         <!-- Freccia a destra -->
                         <Image Grid.Column="2" 
-                   Source="chevron_right.png" 
-                   WidthRequest="12" 
-                   Opacity="0.5"
-                   VerticalOptions="Center" />
+                           Source="chevron_right.png" 
+                           WidthRequest="12" 
+                           Opacity="0.5"
+                           VerticalOptions="Center" />
 
                         <!-- Gesture Recognizer per il click -->
                         <Grid.GestureRecognizers>
@@ -275,24 +272,24 @@
                     <Grid Style="{StaticResource MenuRowStyle}" ColumnDefinitions="Auto, *, Auto">
                         <!-- Icona a sinistra -->
                         <Image Source="widgets_icon.png" 
-                   WidthRequest="24" 
-                   HeightRequest="24" 
-                   VerticalOptions="Center" />
+                           WidthRequest="24" 
+                           HeightRequest="24" 
+                           VerticalOptions="Center" />
 
                         <!-- Testo Centrale -->
                         <Label Grid.Column="1" 
-                   Text="Widget" 
-                   VerticalOptions="Center" 
-                   Margin="10,0"
-                   FontSize="16"
-                   TextColor="Black" />
+                           Text="Widget" 
+                           VerticalOptions="Center" 
+                           Margin="10,0"
+                           FontSize="16"
+                           TextColor="Black" />
 
                         <!-- Freccia a destra -->
                         <Image Grid.Column="2" 
-                   Source="chevron_right.png" 
-                   WidthRequest="12" 
-                   Opacity="0.5"
-                   VerticalOptions="Center" />
+                           Source="chevron_right.png" 
+                           WidthRequest="12" 
+                           Opacity="0.5"
+                           VerticalOptions="Center" />
 
                         <!-- Gesture Recognizer per il click -->
                         <Grid.GestureRecognizers>
@@ -307,25 +304,24 @@
                     <Grid Style="{StaticResource MenuRowStyle}" ColumnDefinitions="Auto, *, Auto">
                         <!-- Icona a sinistra -->
                         <Image Source="access_icon.png" 
-                   WidthRequest="24" 
-                   HeightRequest="24" 
-                   VerticalOptions="Center" />
+                           WidthRequest="24" 
+                           HeightRequest="24" 
+                           VerticalOptions="Center" />
 
                         <!-- Testo Centrale -->
                         <Label Grid.Column="1" 
-                   Text="Accesso e Password" 
-                   VerticalOptions="Center" 
-                   Margin="10,0"
-                   FontSize="16"
-                   TextColor="Black" />
+                           Text="Accesso e Password" 
+                           VerticalOptions="Center" 
+                           Margin="10,0"
+                           FontSize="16"
+                           TextColor="Black" />
 
                         <!-- Freccia a destra -->
                         <Image Grid.Column="2" 
-                   Source="chevron_right.png" 
-                   WidthRequest="12" 
-                   Opacity="0.5"
-                   VerticalOptions="Center" />
-
+                           Source="chevron_right.png" 
+                           WidthRequest="12" 
+                           Opacity="0.5"
+                           VerticalOptions="Center" />
                         <!-- Gesture Recognizer per il click -->
                         <Grid.GestureRecognizers>
                             <TapGestureRecognizer Command="{Binding NavigateToTimeZoneCommand}" />
