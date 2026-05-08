@@ -60,7 +60,8 @@
 
                 <Button Text="Modifica materia"/>
 
-                <Button Text="Elimina materia"/>
+                <Button Text="Elimina materia"
+                        Clicked="OnEliminaMateriaClicked"/>
 
             </HorizontalStackLayout>
 
@@ -98,7 +99,8 @@
                                         <Button Text="Modifica nota"
                                                 Clicked="OnModificaNotaClicked"/>
 
-                                        <Button Text="Elimina nota"/>
+                                        <Button Text="Elimina nota"
+                                                Clicked="OnEliminaNotaClicked"/>
 
                                     </HorizontalStackLayout>
 
