@@ -55,7 +55,7 @@
         </Border>
 
         <!--attività-->
-        
+
         <Border 
             Grid.Row="2"
             Grid.Column="0"
@@ -96,7 +96,7 @@
                        Text="Nessuna data selezionata"
                        HorizontalOptions="Center"/>
 
-                </VerticalStackLayout>
+            </VerticalStackLayout>
         </Border>
 
         <!-- titolo materie -->
@@ -112,7 +112,7 @@
                    HorizontalOptions="Center"/>
         </Border>
 
-        
+
         <!--materie-->
         <Border 
             Grid.Row="4"
@@ -133,9 +133,5 @@
         </Border>
 
     </Grid>
-<<<<<<< Updated upstream
 
 </ContentPage>
-=======
-</ContentPage>
->>>>>>> Stashed changes
