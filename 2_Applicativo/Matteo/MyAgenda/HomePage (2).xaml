@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyAgenda.HomePage">
+
+    <Grid ColumnDefinitions="*,*,*,*"
+          RowDefinitions="*,Auto,*,Auto,*,Auto"
+          Padding="20"
+          RowSpacing="15"
+          ColumnSpacing="15">
+
+        <!-- titolo -->
+        <Border Grid.Row="0"
+                Grid.Column="1"
+                Grid.ColumnSpan="3"
+                Stroke="Gray"
+                StrokeThickness="1"
+                Padding="15"
+                BackgroundColor="LightGray">
+
+            <Label Text="Benvenuto in MyAgenda!"
+                   FontSize="32"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+        </Border>
+
+        <!-- account -->
+        <Border Grid.Row="0"
+                Grid.Column="0"
+                Stroke="Gray"
+                StrokeThickness="1"
+                Padding="15">
+
+            <Grid ColumnDefinitions="*,*,*,*"
+                  RowDefinitions="*,*,*">
+
+                <Button Text="Vai all'account"
+                        Clicked="OnAccountClicked"
+                        Grid.Row="2"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="4"/>
+            </Grid>
+        </Border>
+
+        <!--titolo attività-->
+        <Border Grid.Row="1"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                Stroke="Gray"
+                Padding="10"
+                BackgroundColor="LightBlue">
+
+            <Label Text="Le tue attività"
+                   FontSize="24"
+                   HorizontalOptions="Center"/>
+        </Border>
+
+        <!--attività-->
+        
+        <Border 
+            Grid.Row="2"
+            Grid.Column="0"
+            Grid.ColumnSpan="3"
+            Stroke="Gray"
+            StrokeThickness="1"
+            Padding="15" >
+            <Grid
+                ColumnDefinitions="*,*,*,*"
+                RowDefinitions="*,*,*" >
+                <Button
+                    Text="Vai alle attività"
+                    Clicked="OnAttivitaClicked"
+                    Grid.Row="1"
+                    Grid.Column="3"/>
+            </Grid>
+        </Border>
+
+        <!--calendario-->
+        <Border Grid.Row="1"
+                Grid.RowSpan="4"
+                Grid.Column="3"
+                Grid.ColumnSpan="1"
+                Stroke="Gray"
+                StrokeThickness="1"
+                Padding="15">
+
+            <VerticalStackLayout Spacing="10">
+
+                <Label Text="Calendario"
+                       FontSize="20"
+                       HorizontalOptions="Center"/>
+
+                <DatePicker x:Name="calendarPicker"
+                            DateSelected="OnDateSelected"/>
+
+                <Label x:Name="selectedDateLabel"
+                       Text="Nessuna data selezionata"
+                       HorizontalOptions="Center"/>
+
+                </VerticalStackLayout>
+        </Border>
+
+        <!-- titolo materie -->
+        <Border Grid.Row="3"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                Stroke="Gray"
+                Padding="10"
+                BackgroundColor="LightBlue">
+
+            <Label Text="Le tue materie"
+                   FontSize="24"
+                   HorizontalOptions="Center"/>
+        </Border>
+
+        
+        <!--materie-->
+        <Border 
+            Grid.Row="4"
+            Grid.Column="0"
+            Grid.ColumnSpan="3"
+            Stroke="Gray"
+            StrokeThickness="1"
+            Padding="15" >
+            <Grid 
+                ColumnDefinitions="*,*,*,*"
+                RowDefinitions="*,*,*" >
+                <Button 
+                    Text="Vai alle materie"
+                    Clicked="OnMaterieClicked"
+                    Grid.Row="1"
+                    Grid.Column="3"/>
+            </Grid>
+        </Border>
+
+    </Grid>
+
+</ContentPage>
