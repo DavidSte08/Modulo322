@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyAgenda.HomePage">
+
+    <Grid ColumnDefinitions="*,*,*,*"
+          RowDefinitions="*,*,*,*"
+      Padding="20"
+      RowSpacing="15">
+
+        <!-- TITOLO -->
+        <Border Grid.Row="0"
+            Grid.Column="0"
+            Grid.ColumnSpan="4"
+            Stroke="Gray"
+            StrokeThickness="1"
+            Padding="15"
+            BackgroundColor="LightGray">
+
+            <Label Text="Benvenuto in MyAgenda!"
+               FontSize="32"
+               HorizontalOptions="Center"/>
+        </Border>
+
+        <!-- ACCOUNT -->
+        <Border Grid.Row="1"
+            Grid.Column="0"
+            Grid.ColumnSpan="3"
+            Stroke="Gray"
+            StrokeThickness="1"
+            Padding="15">
+
+            <Button Text="Vai all'account"
+                Clicked="OnAccountClicked"
+                    Grid.Row="1"
+                    Grid.Column="2"/>
+        </Border>
+
+        <!-- ATTIVITÀ -->
+        <Border Grid.Row="2"
+            Grid.Column="0"
+            Grid.ColumnSpan="3"
+            Stroke="Gray"
+            StrokeThickness="1"
+            Padding="15">
+
+            <Button Text="Vai alle attività"
+                Clicked="OnAttivitaClicked"/>
+        </Border>
+
+        <!-- MATERIE -->
+        <Border Grid.Row="3"
+            Grid.Column="0"
+            Grid.ColumnSpan="3"
+            Stroke="Gray"
+            StrokeThickness="1"
+            Padding="15">
+
+            <Button Text="Vai alle materie"
+                Clicked="OnMaterieClicked"/>
+        </Border>
+
+    </Grid>
+
+</ContentPage>

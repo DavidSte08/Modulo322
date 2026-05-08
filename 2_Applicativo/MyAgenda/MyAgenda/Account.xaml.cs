@@ -11,5 +11,4 @@ public partial class Account : ContentPage
     {
         await Shell.Current.GoToAsync("..");
     }
-
 }
