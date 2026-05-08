@@ -7,11 +7,10 @@ public partial class Account : ContentPage
     {
         "melodie.png",
         "superteo08_logo.png",
-        "cuteMinimumRageTetoStareAtyou.png",
         "viggo2.png",
         "juggy.png",
         "haku.png",
-        "st08BS.png",
+        "st08brawl.png",
         "girlfriend.jpeg"
     };
     public Account()
