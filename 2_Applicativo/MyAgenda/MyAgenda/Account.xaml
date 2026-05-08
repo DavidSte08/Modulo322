@@ -5,10 +5,34 @@
              Title="Account">
     <VerticalStackLayout>
         
-        <Label Text="Account" />
+        <ImageButton Source="home_icon.png" 
+                     WidthRequest="50" 
+                     HeightRequest="50" 
+                     Clicked="OnHomeClicked"
+                     HorizontalOptions="Start" />
 
-        <Button Text="HomePage"
-                Clicked="OnHomeClicked" />
+        
+        <Frame HeightRequest="100"
+                   WidthRequest="100"
+                   CornerRadius="70"
+                   HorizontalOptions="Center"
+                   IsClippedToBounds="True"
+                   Padding="0"
+                   BorderColor="Gray"
+                   Margin="0,0,0,0">
+
+            <Image Source="superteo08_logo.png"
+                   WidthRequest="100"
+                   HeightRequest="100"
+                   Aspect="AspectFill"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center" />
+        </Frame>
+        <Label Text="Account" 
+               FontSize="50"
+               HorizontalOptions="Center"/>
+        
+        
         <VerticalStackLayout>
             <Label Text="Impostazioni"
                FontSize="24"
@@ -215,7 +239,7 @@
                     <!-- Separatore -->
                     <BoxView HeightRequest="1" Color="#EEEEEE" Margin="10,0" />
 
-                    <!-- Fuso Orario (template di Google AI)-->
+                    <!-- Fuso Orario (template di Google AI) -->
                     <Grid Style="{StaticResource MenuRowStyle}" ColumnDefinitions="Auto, *, Auto">
                         <!-- Icona a sinistra -->
                         <Image Source="clock_icon.png" 
