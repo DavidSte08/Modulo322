@@ -1,0 +1,6 @@
+Tablet:
+https://www.figma.com/design/DyGnsXPVi37xQ8cFGLpevM/Wireframe-Esempio?node-id=0-1&t=LiaxKqbeRSMxomzU-1
+Mobile:
+https://www.figma.com/design/D6NTESgK2FD09gERDXfVXC/myAgenda_wireframe?node-id=0-1&t=be5MOyBKrk5cUiRn-1
+PC:
+https://www.figma.com/design/RUi2DUVaWLveVjGR3xDUPE/Wireframe?node-id=0-1&p=f&t=h15L3DRj2Mj48QiE-0
