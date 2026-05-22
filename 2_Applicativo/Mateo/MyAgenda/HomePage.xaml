@@ -34,7 +34,7 @@
             <Grid ColumnDefinitions="*,*,*,*"
                   RowDefinitions="*,*,*">
 
-                <Button Text="Vai all'account"
+                <Button Text="Vai all'account" 
                         Clicked="OnAccountClicked"
                         Grid.Row="2"
                         Grid.Column="0"
@@ -123,13 +123,83 @@
             StrokeThickness="1"
             Padding="15" >
             <Grid 
-                ColumnDefinitions="*,*,*,*"
-                RowDefinitions="*,*,*" >
-                <Button 
-                    Text="Vai alle materie"
-                    Clicked="OnMaterieClicked"
-                    Grid.Row="1"
-                    Grid.Column="3"/>
+    ColumnDefinitions="*,*,*,*"
+    RowDefinitions="*,*,*"
+    ColumnSpacing="10">
+
+                <!-- TOP 1 -->
+                <Border Grid.Column="0"
+            Grid.RowSpan="3"
+            Stroke="Gray"
+            Padding="10"
+            BackgroundColor="LightGoldenrodYellow">
+
+                    <VerticalStackLayout VerticalOptions="Center">
+
+                        <Label Text="1°"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
+
+                        <Label x:Name="top1Label"
+                   Text="-"
+                   HorizontalOptions="Center"/>
+
+                    </VerticalStackLayout>
+
+                </Border>
+
+                <!-- TOP 2 -->
+                <Border Grid.Column="1"
+            Grid.RowSpan="3"
+            Stroke="Gray"
+            Padding="10"
+            BackgroundColor="LightGray">
+
+                    <VerticalStackLayout VerticalOptions="Center">
+
+                        <Label Text="2°"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
+
+                        <Label x:Name="top2Label"
+                   Text="-"
+                   HorizontalOptions="Center"/>
+
+                    </VerticalStackLayout>
+
+                </Border>
+
+                <!-- TOP 3 -->
+                <Border Grid.Column="2"
+            Grid.RowSpan="3"
+            Stroke="Gray"
+            Padding="10"
+            BackgroundColor="#CD7F32">
+
+                    <VerticalStackLayout VerticalOptions="Center">
+
+                        <Label Text="3°"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
+
+                        <Label x:Name="top3Label"
+                   Text="-"
+                   HorizontalOptions="Center"/>
+
+                    </VerticalStackLayout>
+
+                </Border>
+
+                <!-- BOTTONE -->
+                <Button
+        Text="Vai alle materie"
+        Clicked="OnMaterieClicked"
+        Grid.Row="1"
+        Grid.Column="3"/>
+
             </Grid>
         </Border>
 

@@ -1,15 +1,29 @@
 using System.Collections.ObjectModel;
+using System.Text.Json;
 
 namespace MyAgenda;
 
 public partial class Scuola : ContentPage
 {
-    ObservableCollection<MateriaModel> materie =
+    ObservableCollection<MateriaModel> primoSemestre =
+    new ObservableCollection<MateriaModel>();
+
+    ObservableCollection<MateriaModel> secondoSemestre =
         new ObservableCollection<MateriaModel>();
+
+    ObservableCollection<MateriaModel> materie;
+
+    string filePath =
+        Path.Combine(FileSystem.AppDataDirectory, "materie.txt");
 
     public Scuola()
     {
+        
         InitializeComponent();
+
+        CaricaDati();
+
+        materie = primoSemestre;
 
         MaterieCollection.ItemsSource = materie;
     }
@@ -28,7 +42,16 @@ public partial class Scuola : ContentPage
                 Media = "",
                 Note = new List<double>()
             });
+
+            SalvaDati();
         }
+    }
+    //Torna alla home
+    private async void OnHomeClicked(object sender, EventArgs e)
+    {
+        SalvaDati();
+
+        await Shell.Current.GoToAsync("//HomePage");
     }
 
     // AGGIUNGI NOTA
@@ -52,12 +75,14 @@ public partial class Scuola : ContentPage
             materia.Media =
                 media.ToString("0.0");
 
-            // aggiorna la CollectionView
+            SalvaDati();
+
             MaterieCollection.ItemsSource = null;
             MaterieCollection.ItemsSource = materie;
         }
     }
 
+    // MODIFICA NOTA
     private async void OnModificaNotaClicked(object sender, EventArgs e)
     {
         Button bottone = sender as Button;
@@ -100,11 +125,15 @@ public partial class Scuola : ContentPage
                 materia.Media =
                     materia.Note.Average().ToString("0.0");
 
+                SalvaDati();
+
                 MaterieCollection.ItemsSource = null;
                 MaterieCollection.ItemsSource = materie;
             }
         }
     }
+
+    // ELIMINA NOTA
     private async void OnEliminaNotaClicked(object sender, EventArgs e)
     {
         Button bottone = sender as Button;
@@ -147,10 +176,121 @@ public partial class Scuola : ContentPage
                 materia.Media = "";
             }
 
+            SalvaDati();
+
             MaterieCollection.ItemsSource = null;
             MaterieCollection.ItemsSource = materie;
         }
     }
+
+    // ELIMINA MATERIA
+    private async void OnEliminaMateriaClicked(object sender, EventArgs e)
+    {
+        string nome =
+            await DisplayPromptAsync(
+                "Elimina Materia",
+                "Scrivi il nome della materia");
+
+        MateriaModel materiaDaEliminare = null;
+
+        foreach (MateriaModel materia in materie)
+        {
+            if (materia.Nome == nome)
+            {
+                materiaDaEliminare = materia;
+            }
+        }
+
+        if (materiaDaEliminare != null)
+        {
+            materie.Remove(materiaDaEliminare);
+
+            SalvaDati();
+        }
+    }
+
+    // MODIFICA MATERIA
+    private async void OnModificaMateriaClicked(object sender, EventArgs e)
+    {
+        string vecchioNome =
+            await DisplayPromptAsync(
+                "Modifica Materia",
+                "Scrivi il nome della materia");
+
+        foreach (MateriaModel materia in materie)
+        {
+            if (materia.Nome == vecchioNome)
+            {
+                string nuovoNome =
+                    await DisplayPromptAsync(
+                        "Nuovo Nome",
+                        "Inserisci nuovo nome");
+
+                materia.Nome = nuovoNome;
+
+                SalvaDati();
+
+                MaterieCollection.ItemsSource = null;
+                MaterieCollection.ItemsSource = materie;
+            }
+        }
+    }
+
+    // PICKER SEMESTRE
+    private void OnSemestreSelected(object sender, EventArgs e)
+    {
+        string semestre =
+            semestrePicker.SelectedItem.ToString();
+
+        selectedSemestreLabel.Text = semestre;
+
+        if (semestre == "Primo semestre")
+        {
+            materie = primoSemestre;
+        }
+        else
+        {
+            materie = secondoSemestre;
+        }
+
+        MaterieCollection.ItemsSource = null;
+        MaterieCollection.ItemsSource = materie;
+    }
+
+    // SALVA FILE
+    private void SalvaDati()
+    {
+        DatiSalvati dati = new DatiSalvati
+        {
+            PrimoSemestre = primoSemestre,
+            SecondoSemestre = secondoSemestre
+        };
+
+        string json =
+            JsonSerializer.Serialize(dati);
+
+        File.WriteAllText(filePath, json);
+    }
+
+    // CARICA FILE
+    private void CaricaDati()
+    {
+        if (File.Exists(filePath))
+        {
+            string json =
+                File.ReadAllText(filePath);
+
+            DatiSalvati dati =
+                JsonSerializer.Deserialize<DatiSalvati>(json);
+
+            if (dati != null)
+            {
+                primoSemestre = dati.PrimoSemestre;
+                secondoSemestre = dati.SecondoSemestre;
+            }
+        }
+    }
+
     // MODEL
     public class MateriaModel
     {
@@ -160,16 +300,10 @@ public partial class Scuola : ContentPage
 
         public List<double> Note { get; set; }
     }
-
-    // PICKER SEMESTRE
-    private void OnSemestreSelected(object sender, EventArgs e)
+    public class DatiSalvati
     {
-        selectedSemestreLabel.Text =
-            semestrePicker.SelectedItem.ToString();
-    }
+        public ObservableCollection<MateriaModel> PrimoSemestre { get; set; }
 
-    private void OnEliminaMateriaClicked(object sender, EventArgs e)
-    {
-
+        public ObservableCollection<MateriaModel> SecondoSemestre { get; set; }
     }
 }

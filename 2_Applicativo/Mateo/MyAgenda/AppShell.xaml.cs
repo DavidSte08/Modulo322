@@ -11,7 +11,7 @@
             Routing.RegisterRoute("HomePage", typeof(HomePage));
             Routing.RegisterRoute("Attivita", typeof(Attivita));
             Routing.RegisterRoute("Scuola", typeof(Scuola));
-            Routing.RegisterRoute("Login", typeof(Login));
+            
         }
     }
 }
