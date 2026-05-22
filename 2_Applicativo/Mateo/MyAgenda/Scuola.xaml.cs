@@ -14,7 +14,9 @@ public partial class Scuola : ContentPage
     ObservableCollection<MateriaModel> materie;
 
     string filePath =
-        Path.Combine(FileSystem.AppDataDirectory, "materie.txt");
+    Path.Combine(
+        FileSystem.AppDataDirectory,
+        $"{Sessione.Username}_materie.txt");
 
     public Scuola()
     {
