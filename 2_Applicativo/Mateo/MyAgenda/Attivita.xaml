@@ -1,14 +1,62 @@
 <?xml version="1.0" encoding="utf-8" ?>
+
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyAgenda.Attivita"
-             Title="Attivita">
-    <VerticalStackLayout>
-        
-        <Label Text="Attivita" />
+             BackgroundColor="#ECECEC"
+             Title="Attività">
 
-        <Button Text="HomePage"
-                Clicked="OnHomeClicked" />
+    <Grid ColumnDefinitions="220,*">
 
-    </VerticalStackLayout>
+        <!-- SINISTRA -->
+        <VerticalStackLayout Padding="15"
+                             Spacing="15">
+
+            <!-- BACK -->
+            <Button Text="←"
+                    WidthRequest="40"
+                    HeightRequest="40"
+                    CornerRadius="20"
+                    BackgroundColor="White"
+                    HorizontalOptions="Start"
+                    Clicked="OnHomeClicked"/>
+
+            <!-- AGGIUNGI -->
+            <Button Text="Aggiungi Evento"
+                    HeightRequest="40"
+                    BackgroundColor="#D9D9D9"
+                    Clicked="OnAddEventoClicked"/>
+
+            <!-- CALENDARIO -->
+            <Border Stroke="#CCCCCC"
+                    BackgroundColor="White"
+                    Padding="10">
+
+                <VerticalStackLayout>
+
+                    <DatePicker x:Name="calendarPicker"
+                                DateSelected="OnDateSelected"/>
+
+                </VerticalStackLayout>
+
+            </Border>
+
+        </VerticalStackLayout>
+
+        <!-- TABELLA -->
+        <ScrollView Grid.Column="1"
+                    Orientation="Both">
+
+            <Grid x:Name="CalendarioGrid"
+                  Padding="10"
+                  RowSpacing="1"
+                  ColumnSpacing="1"
+                  BackgroundColor="#BBBBBB">
+
+            </Grid>
+
+        </ScrollView>
+
+    </Grid>
+
 </ContentPage>
