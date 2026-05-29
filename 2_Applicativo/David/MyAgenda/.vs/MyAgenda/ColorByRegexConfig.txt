@@ -1,0 +1,10 @@
+// Questo file contiene regole per colorare le schede dei documenti in base a espressioni regolari. Ogni riga contiene un'espressione regolare che verrà confrontata con il percorso completo di un file. Tutti i file che corrispondono a un'espressione regolare condivideranno un colore.
+// È possibile personalizzare il colore assegnato a qualsiasi gruppo di file facendo clic con il pulsante destro del mouse sulla scheda e scegliendo "Imposta colore scheda".
+// Le espressioni regolari verranno confrontate nell'ordine in cui compaiono in questo file. Per la sintassi, vedere https://docs.microsoft.com/it-it/dotnet/standard/base-types/regular-expressions.
+// Le espressioni regolari // vengono confrontate come senza distinzione tra maiuscole e minuscole per impostazione predefinita. È possibile eseguire l'override di questo comportamento usando opzioni del gruppo di acquisizione come "(?-i:expression)".
+// Modificare il file e salvare le modifiche per vederle applicate immediatamente. Eventuali errori rilevati durante l'analisi o la valutazione delle espressioni verranno visualizzati nella Finestra di output in un riquadro denominato "Colore per espressione regolare".
+^.*\.cs$
+^.*\.fs$
+^.*\.vb$
+^.*\.cp?p?$
+^.*\.hp?p?$
