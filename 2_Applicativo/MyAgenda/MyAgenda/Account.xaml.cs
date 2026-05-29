@@ -7,9 +7,21 @@ public partial class Account : ContentPage
 
         InitializeComponent();
     }
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+
+        // Controlla se è presente un nome utente valido salvato nella sessione dal login
+        if (!string.IsNullOrEmpty(Sessione.Username))
+        {
+            // Aggiorna il testo dell'etichetta XAML con il vero nome utente
+            LblNomeUtente.Text = Sessione.Username;
+        }
+    }
 
     private async void OnHomeClicked(object sender, EventArgs e)
     {
+
         await Shell.Current.GoToAsync("..");
     }
 
@@ -21,6 +33,12 @@ public partial class Account : ContentPage
         if (BtnApplicaDettagli.IsVisible) return;
 
         TxtNomeUtente.Text = LblNomeUtente.Text;
+
+        // 2. Aggiornamento in memoria (per la sessione corrente)
+        Sessione.Username = TxtNomeUtente.Text;
+
+        // 3. PERSISTENZA: Salva il nome sul dispositivo (rimane anche se chiudi l'app)
+        Preferences.Default.Set("CurrentUser", TxtNomeUtente.Text);
 
         BtnApplicaDettagli.IsVisible = true;
         ImgEditIcon.IsVisible = true;
