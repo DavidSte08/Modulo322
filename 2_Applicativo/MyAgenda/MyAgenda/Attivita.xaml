@@ -12,7 +12,7 @@
         <VerticalStackLayout Padding="15"
                              Spacing="15">
 
-            <!-- BACK -->
+            <!-- HOME -->
             <Button Text="←"
                     WidthRequest="40"
                     HeightRequest="40"
@@ -27,7 +27,7 @@
                     BackgroundColor="#D9D9D9"
                     Clicked="OnAddEventoClicked"/>
 
-            <!-- CALENDARIO -->
+            <!-- DATE PICKER -->
             <Border Stroke="#CCCCCC"
                     BackgroundColor="White"
                     Padding="10">
@@ -40,22 +40,79 @@
                 </VerticalStackLayout>
 
             </Border>
+            <!-- QUICK ADD -->
+
+            <Border Stroke="#CCCCCC"
+        BackgroundColor="White"
+        Padding="10">
+
+                <VerticalStackLayout Spacing="10">
+
+                    <Label Text="Quick Add"
+               FontAttributes="Bold"
+               FontSize="18"/>
+
+                    <!-- NOME -->
+                    <Picker x:Name="quickNomePicker"
+                Title="Nome"/>
+
+                    <!-- TIPO -->
+                    <Picker x:Name="quickTipoPicker"
+                Title="Tipo"/>
+
+                    <!-- DATA -->
+                    <DatePicker x:Name="quickDatePicker"/>
+
+                    <!-- ORA -->
+                    <TimePicker x:Name="quickTimePicker"/>
+
+                    <!-- BOTTONE -->
+                    <Button Text="Add"
+                Clicked="OnQuickAddClicked"/>
+
+                </VerticalStackLayout>
+
+            </Border>
 
         </VerticalStackLayout>
 
-        <!-- TABELLA -->
-        <ScrollView Grid.Column="1"
-                    Orientation="Both">
+        <!-- CALENDARIO -->
+        <!-- CALENDARIO -->
+        <Grid Grid.Column="1"
+      RowDefinitions="40,*">
 
-            <Grid x:Name="CalendarioGrid"
-                  Padding="10"
+            <!-- HEADER FISSO -->
+            <ScrollView x:Name="HeaderScroll"
+                Grid.Row="0"
+                Orientation="Horizontal"
+                HorizontalScrollBarVisibility="Never">
+
+                <Grid x:Name="HeaderGrid"
+              HeightRequest="40"
+              ColumnSpacing="1"
+              BackgroundColor="#BBBBBB"/>
+
+            </ScrollView>
+
+            <!-- SCROLL VERTICALE -->
+            <ScrollView Grid.Row="1"
+                Orientation="Vertical">
+
+                <!-- SCROLL ORIZZONTALE -->
+                <ScrollView x:Name="BodyScroll"
+                    Orientation="Horizontal"
+                    Scrolled="BodyScroll_Scrolled">
+
+                    <Grid x:Name="CalendarioGrid"
                   RowSpacing="1"
                   ColumnSpacing="1"
-                  BackgroundColor="#BBBBBB">
+                  BackgroundColor="#BBBBBB"/>
 
-            </Grid>
+                </ScrollView>
 
-        </ScrollView>
+            </ScrollView>
+
+        </Grid>
 
     </Grid>
 
