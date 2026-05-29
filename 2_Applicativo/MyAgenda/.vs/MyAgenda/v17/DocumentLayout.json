@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\DatiAllievo\\Matteo\\GitHub\\Modulo322\\2_Applicativo\\MyAgenda\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|c:\\datiallievo\\matteo\\github\\modulo322\\2_applicativo\\myagenda\\myagenda\\attivitamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|solutionrelative:myagenda\\attivitamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|c:\\datiallievo\\matteo\\github\\modulo322\\2_applicativo\\myagenda\\myagenda\\attivita.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|solutionrelative:myagenda\\attivita.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|c:\\datiallievo\\matteo\\github\\modulo322\\2_applicativo\\myagenda\\myagenda\\attivita.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|solutionrelative:myagenda\\attivita.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|c:\\datiallievo\\matteo\\github\\modulo322\\2_applicativo\\myagenda\\myagenda\\attivitamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|solutionrelative:myagenda\\attivitamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|c:\\datiallievo\\matteo\\github\\modulo322\\2_applicativo\\myagenda\\myagenda\\homepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -66,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,7 +78,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "AttivitaModel.cs",
               "DocumentMoniker": "C:\\DatiAllievo\\Matteo\\GitHub\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\AttivitaModel.cs",
               "RelativeDocumentMoniker": "MyAgenda\\AttivitaModel.cs",
@@ -86,24 +86,25 @@
               "RelativeToolTip": "MyAgenda\\AttivitaModel.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-22T14:23:12.207Z"
+              "WhenOpened": "2026-05-22T14:23:12.207Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Attivita.xaml.cs",
               "DocumentMoniker": "C:\\DatiAllievo\\Matteo\\GitHub\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\Attivita.xaml.cs",
               "RelativeDocumentMoniker": "MyAgenda\\Attivita.xaml.cs",
               "ToolTip": "C:\\DatiAllievo\\Matteo\\GitHub\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\Attivita.xaml.cs",
               "RelativeToolTip": "MyAgenda\\Attivita.xaml.cs",
-              "ViewState": "AgIAANAAAAAAAAAAAAAkwOEAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAMQAAAAAAAAAAAAkwOEAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-22T14:19:34.128Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Attivita.xaml",
               "DocumentMoniker": "C:\\DatiAllievo\\Matteo\\GitHub\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\Attivita.xaml",
               "RelativeDocumentMoniker": "MyAgenda\\Attivita.xaml",
@@ -111,7 +112,8 @@
               "RelativeToolTip": "MyAgenda\\Attivita.xaml",
               "ViewState": "AgIAACcAAAAAAAAAAAAowD0AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-22T14:19:05.578Z"
+              "WhenOpened": "2026-05-22T14:19:05.578Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -135,7 +137,8 @@
               "RelativeToolTip": "MyAgenda\\Login.xaml",
               "ViewState": "AgIAADwAAAAAAAAAAAAowEUAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-22T14:07:48.072Z"
+              "WhenOpened": "2026-05-22T14:07:48.072Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -159,7 +162,8 @@
               "RelativeToolTip": "MyAgenda\\PasswordRecupero.xaml",
               "ViewState": "AgIAABwAAAAAAAAAAAAowCkAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-22T14:07:06.391Z"
+              "WhenOpened": "2026-05-22T14:07:06.391Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -183,7 +187,8 @@
               "RelativeToolTip": "MyAgenda\\Register.xaml",
               "ViewState": "AgIAAEUAAAAAAAAAAAAowFcAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-22T14:06:48.571Z"
+              "WhenOpened": "2026-05-22T14:06:48.571Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -207,7 +212,8 @@
               "RelativeToolTip": "MyAgenda\\Scuola.xaml",
               "ViewState": "AgIAAH8AAAAAAAAAAAAowIoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-24T12:32:45.937Z"
+              "WhenOpened": "2026-04-24T12:32:45.937Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
