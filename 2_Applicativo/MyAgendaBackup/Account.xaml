@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyAgenda.Account"
+             Title="Account">
+    <VerticalStackLayout>
+        
+        <ImageButton Source="home_icon.png" 
+                     WidthRequest="50" 
+                     HeightRequest="50" 
+                     Clicked="OnHomeClicked"
+                     HorizontalOptions="Start" />
+
+        <Label Text="Account" 
+               FontSize="50"
+               HorizontalOptions="Center"/>
+        
+        
+        <VerticalStackLayout>
+            <Label Text="Impostazioni"
+               FontSize="24"
+               HorizontalOptions="Center"/>
+            <Border BackgroundColor="White" 
+                StrokeShape="RoundRectangle 20"
+                Margin="20"
+                Padding="0"
+                StrokeThickness="0">
+                <Border.Shadow>
+                    <Shadow Brush="Black" Offset="0,2" Opacity="0.1" Radius="10" />
+                </Border.Shadow>
+
+                <!-- Template di base creato con Google AI e adattato alla funzione-->
+                <VerticalStackLayout>
+                    <!-- Modifica Informazioni -->
+                    <Grid Style="{StaticResource MenuRowStyle}" ColumnDefinitions="Auto, *, Auto">
+                        <!-- Icona a sinistra -->
+                        <Image Source="user_icon.png" 
+                   WidthRequest="24" 
+                   HeightRequest="24" 
+                   VerticalOptions="Center" />
+
+                        <!-- Testo Centrale -->
+                        <Label Grid.Column="1" 
+                   Text="Modifica Informazioni" 
+                   VerticalOptions="Center" 
+                   Margin="10,0"
+                   FontSize="16"
+                   TextColor="Black" />
+
+                        <!-- Freccia a destra -->
+                        <Image Grid.Column="2" 
+                   Source="chevron_right.png" 
+                   WidthRequest="12" 
+                   Opacity="0.5"
+                   VerticalOptions="Center" />
+
+                        <!-- Gesture Recognizer per il click -->
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding NavigateToTimeZoneCommand}" />
+                        </Grid.GestureRecognizers>
+                    </Grid>
+                    
+                    <!-- Separatore -->
+                    <BoxView HeightRequest="1" Color="#EEEEEE" Margin="10,0" />
+
+                    <!-- Accesso e password -->
+                    <Grid Style="{StaticResource MenuRowStyle}" ColumnDefinitions="Auto, *, Auto">
+                        <!-- Icona a sinistra -->
+                        <Image Source="access_icon.png" 
+                           WidthRequest="24" 
+                           HeightRequest="24" 
+                           VerticalOptions="Center" />
+
+                        <!-- Testo Centrale -->
+                        <Label Grid.Column="1" 
+                               Text="Accesso e Password" 
+                               VerticalOptions="Center" 
+                               Margin="10,0"
+                               FontSize="16"
+                               TextColor="Black" /> 
+
+                        <!-- Freccia a destra -->
+                        <Image Grid.Column="2" 
+                           Source="chevron_right.png" 
+                           WidthRequest="12" 
+                           Opacity="0.5"
+                           VerticalOptions="Center" />
+
+                        <!-- Gesture Recognizer per il click -->
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding NavigateToTimeZoneCommand}" />
+                        </Grid.GestureRecognizers>
+                    </Grid>
+
+                    <!-- Separatore -->
+                    <BoxView HeightRequest="1" Color="#EEEEEE" Margin="10,0" />
+
+                </VerticalStackLayout>
+            </Border>
+        </VerticalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>
