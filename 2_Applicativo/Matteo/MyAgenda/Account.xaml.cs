@@ -11,7 +11,7 @@ public partial class Account : ContentPage
     {
         base.OnAppearing();
 
-        // Controlla se Ã¨ presente un nome utente valido salvato nella sessione dal login
+        // Controlla se è presente un nome utente valido salvato nella sessione dal login
         if (!string.IsNullOrEmpty(Sessione.Username))
         {
             // Aggiorna il testo dell'etichetta XAML con il vero nome utente

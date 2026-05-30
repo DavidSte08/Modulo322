@@ -13,12 +13,14 @@
             <!-- HEADER -->
             <Grid ColumnDefinitions="Auto,*,Auto">
 
-                <!-- back -->
                 <Button Text="←"
-                        WidthRequest="50"
-                        HeightRequest="50"
+                    WidthRequest="50"
+                    HeightRequest="50"
                         CornerRadius="25"
-                        BackgroundColor="White"/>
+                    BackgroundColor="Black"
+                    Padding="0"
+                    Margin="0,0,0,0"
+                    Clicked="OnHomeClicked"/>
 
                 <!-- semestre -->
                 <Border Grid.Column="1"
@@ -58,39 +60,50 @@
                 <Button Text="Aggiungi Materia"
                         Clicked="OnAddMateriaClicked"/>
 
-                <Button Text="Modifica materia"/>
+                <Button Text="Modifica materia"
+                        Clicked="OnModificaMateriaClicked"/>
 
-                <Button Text="Elimina materia"/>
+                <Button Text="Elimina materia"
+                        Clicked="OnEliminaMateriaClicked"/>
 
             </HorizontalStackLayout>
 
             <!-- LISTA MATERIE -->
-            <CollectionView x:Name="MaterieCollection">
+            <CollectionView x:Name="MaterieCollection"
+                            >
 
                 <CollectionView.ItemsLayout>
                     <GridItemsLayout Orientation="Vertical"
-                                     Span="2"/>
+                                     Span="2"
+                                     VerticalItemSpacing="10"
+                     HorizontalItemSpacing="10"/>
+                                     
                 </CollectionView.ItemsLayout>
 
-                <CollectionView.ItemTemplate>
+                <CollectionView.ItemTemplate
+                    >
 
-                    <DataTemplate>
+                    <DataTemplate
+                        >
 
                         <Border Stroke="LightGray"
                                 StrokeThickness="1"
-                                Padding="15"
-                                Margin="5">
+                                Padding="20"
+                                Margin="100">
 
-                            <Grid ColumnDefinitions="*,Auto">
+                            <Grid ColumnDefinitions="*,Auto"
+                                  >
 
                                 <!-- sinistra -->
-                                <VerticalStackLayout Spacing="10">
+                                <VerticalStackLayout Spacing="10"
+                                                     >
 
                                     <Label Text="{Binding Nome}"
                                            FontSize="20"
                                            FontAttributes="Bold"/>
 
-                                    <HorizontalStackLayout Spacing="10">
+                                    <HorizontalStackLayout Spacing="10"
+                                                           >
 
                                         <Button Text="Aggiungi nota"
                                                 Clicked="OnAddNotaClicked"/>
@@ -98,7 +111,8 @@
                                         <Button Text="Modifica nota"
                                                 Clicked="OnModificaNotaClicked"/>
 
-                                        <Button Text="Elimina nota"/>
+                                        <Button Text="Elimina nota"
+                                                Clicked="OnEliminaNotaClicked"/>
 
                                     </HorizontalStackLayout>
 
