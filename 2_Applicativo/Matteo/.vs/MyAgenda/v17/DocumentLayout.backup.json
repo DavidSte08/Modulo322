@@ -3,12 +3,27 @@
   "WorkspaceRootPath": "C:\\Users\\matteo\\Documents\\SAMT\\Samt_2_25-26\\M322-Svilup._\u0026_impl_interfacce_grafiche\\GitHub\\Modulo322\\2_Applicativo\\Matteo\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|c:\\users\\matteo\\documents\\samt\\samt_2_25-26\\m322-svilup._\u0026_impl_interfacce_grafiche\\github\\modulo322\\2_applicativo\\matteo\\myagenda\\account.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|solutionrelative:myagenda\\account.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|c:\\users\\matteo\\documents\\samt\\samt_2_25-26\\m322-svilup._\u0026_impl_interfacce_grafiche\\github\\modulo322\\2_applicativo\\matteo\\myagenda\\account.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|solutionrelative:myagenda\\account.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|c:\\users\\matteo\\documents\\samt\\samt_2_25-26\\m322-svilup._\u0026_impl_interfacce_grafiche\\github\\modulo322\\2_applicativo\\matteo\\myagenda\\account.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|solutionrelative:myagenda\\account.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|c:\\users\\matteo\\documents\\samt\\samt_2_25-26\\m322-svilup._\u0026_impl_interfacce_grafiche\\github\\modulo322\\2_applicativo\\matteo\\myagenda\\sessione.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|solutionrelative:myagenda\\sessione.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.311\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.EolTargetFrameworks.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|c:\\users\\matteo\\documents\\samt\\samt_2_25-26\\m322-svilup._\u0026_impl_interfacce_grafiche\\github\\modulo322\\2_applicativo\\matteo\\myagenda\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|solutionrelative:myagenda\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|c:\\users\\matteo\\documents\\samt\\samt_2_25-26\\m322-svilup._\u0026_impl_interfacce_grafiche\\github\\modulo322\\2_applicativo\\matteo\\myagenda\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|solutionrelative:myagenda\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|c:\\users\\matteo\\documents\\samt\\samt_2_25-26\\m322-svilup._\u0026_impl_interfacce_grafiche\\github\\modulo322\\2_applicativo\\matteo\\myagenda\\homepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -34,7 +49,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,32 +61,85 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "Microsoft.NET.EolTargetFrameworks.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.311\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.EolTargetFrameworks.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.311\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.EolTargetFrameworks.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.311\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.EolTargetFrameworks.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.311\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.EolTargetFrameworks.targets",
+              "ViewState": "AgIAABAAAAAAAAAAAAAhwCUAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2026-05-30T19:38:15.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\matteo\\Documents\\SAMT\\Samt_2_25-26\\M322-Svilup._\u0026_impl_interfacce_grafiche\\GitHub\\Modulo322\\2_Applicativo\\Matteo\\MyAgenda\\AuthService.cs",
+              "RelativeDocumentMoniker": "MyAgenda\\AuthService.cs",
+              "ToolTip": "C:\\Users\\matteo\\Documents\\SAMT\\Samt_2_25-26\\M322-Svilup._\u0026_impl_interfacce_grafiche\\GitHub\\Modulo322\\2_Applicativo\\Matteo\\MyAgenda\\AuthService.cs",
+              "RelativeToolTip": "MyAgenda\\AuthService.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAIwHcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-30T15:32:16.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Login.xaml",
+              "DocumentMoniker": "C:\\Users\\matteo\\Documents\\SAMT\\Samt_2_25-26\\M322-Svilup._\u0026_impl_interfacce_grafiche\\GitHub\\Modulo322\\2_Applicativo\\Matteo\\MyAgenda\\Login.xaml",
+              "RelativeDocumentMoniker": "MyAgenda\\Login.xaml",
+              "ToolTip": "C:\\Users\\matteo\\Documents\\SAMT\\Samt_2_25-26\\M322-Svilup._\u0026_impl_interfacce_grafiche\\GitHub\\Modulo322\\2_Applicativo\\Matteo\\MyAgenda\\Login.xaml",
+              "RelativeToolTip": "MyAgenda\\Login.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-30T15:32:14.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Sessione.cs",
+              "DocumentMoniker": "C:\\Users\\matteo\\Documents\\SAMT\\Samt_2_25-26\\M322-Svilup._\u0026_impl_interfacce_grafiche\\GitHub\\Modulo322\\2_Applicativo\\Matteo\\MyAgenda\\Sessione.cs",
+              "RelativeDocumentMoniker": "MyAgenda\\Sessione.cs",
+              "ToolTip": "C:\\Users\\matteo\\Documents\\SAMT\\Samt_2_25-26\\M322-Svilup._\u0026_impl_interfacce_grafiche\\GitHub\\Modulo322\\2_Applicativo\\Matteo\\MyAgenda\\Sessione.cs",
+              "RelativeToolTip": "MyAgenda\\Sessione.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-30T15:32:08.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Account.xaml.cs",
               "DocumentMoniker": "C:\\Users\\matteo\\Documents\\SAMT\\Samt_2_25-26\\M322-Svilup._\u0026_impl_interfacce_grafiche\\GitHub\\Modulo322\\2_Applicativo\\Matteo\\MyAgenda\\Account.xaml.cs",
               "RelativeDocumentMoniker": "MyAgenda\\Account.xaml.cs",
               "ToolTip": "C:\\Users\\matteo\\Documents\\SAMT\\Samt_2_25-26\\M322-Svilup._\u0026_impl_interfacce_grafiche\\GitHub\\Modulo322\\2_Applicativo\\Matteo\\MyAgenda\\Account.xaml.cs",
               "RelativeToolTip": "MyAgenda\\Account.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAUwE8AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T11:05:10.758Z"
+              "WhenOpened": "2026-05-27T11:05:10.758Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Account.xaml",
               "DocumentMoniker": "C:\\Users\\matteo\\Documents\\SAMT\\Samt_2_25-26\\M322-Svilup._\u0026_impl_interfacce_grafiche\\GitHub\\Modulo322\\2_Applicativo\\Matteo\\MyAgenda\\Account.xaml",
               "RelativeDocumentMoniker": "MyAgenda\\Account.xaml",
               "ToolTip": "C:\\Users\\matteo\\Documents\\SAMT\\Samt_2_25-26\\M322-Svilup._\u0026_impl_interfacce_grafiche\\GitHub\\Modulo322\\2_Applicativo\\Matteo\\MyAgenda\\Account.xaml",
               "RelativeToolTip": "MyAgenda\\Account.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACAAAACbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-05-27T10:59:13.876Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "HomePage.xaml",
               "DocumentMoniker": "C:\\Users\\matteo\\Documents\\SAMT\\Samt_2_25-26\\M322-Svilup._\u0026_impl_interfacce_grafiche\\GitHub\\Modulo322\\2_Applicativo\\Matteo\\MyAgenda\\HomePage.xaml",
               "RelativeDocumentMoniker": "MyAgenda\\HomePage.xaml",
@@ -83,7 +151,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "HomePage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\matteo\\Documents\\SAMT\\Samt_2_25-26\\M322-Svilup._\u0026_impl_interfacce_grafiche\\GitHub\\Modulo322\\2_Applicativo\\Matteo\\MyAgenda\\HomePage.xaml.cs",
               "RelativeDocumentMoniker": "MyAgenda\\HomePage.xaml.cs",
@@ -95,7 +163,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Scuola.xaml",
               "DocumentMoniker": "C:\\Users\\matteo\\Documents\\SAMT\\Samt_2_25-26\\M322-Svilup._\u0026_impl_interfacce_grafiche\\GitHub\\Modulo322\\2_Applicativo\\Matteo\\MyAgenda\\Scuola.xaml",
               "RelativeDocumentMoniker": "MyAgenda\\Scuola.xaml",
@@ -108,7 +176,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Scuola.xaml.cs",
               "DocumentMoniker": "C:\\Users\\matteo\\Documents\\SAMT\\Samt_2_25-26\\M322-Svilup._\u0026_impl_interfacce_grafiche\\GitHub\\Modulo322\\2_Applicativo\\Matteo\\MyAgenda\\Scuola.xaml.cs",
               "RelativeDocumentMoniker": "MyAgenda\\Scuola.xaml.cs",
