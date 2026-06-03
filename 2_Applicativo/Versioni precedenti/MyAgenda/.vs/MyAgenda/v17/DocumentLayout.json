@@ -3,7 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\ska997\\source\\repos\\Modulo322\\2_Applicativo\\MyAgenda\\",
   "Documents": [
     {
+<<<<<<< HEAD:2_Applicativo/Versioni precedenti/MyAgenda/.vs/MyAgenda/v17/DocumentLayout.json
       "AbsoluteMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|c:\\users\\ska997\\source\\repos\\modulo322\\2_applicativo\\myagenda\\myagenda\\homepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+=======
+      "AbsoluteMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|c:\\users\\uzf668\\source\\repos\\progetto\\modulo322\\2_applicativo\\myagenda\\myagenda\\homepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+>>>>>>> bc5e3112ed061cd975aa018a5c6c58c02cb4ad2d:2_Applicativo/MyAgenda/.vs/MyAgenda/v17/DocumentLayout.json
       "RelativeMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|solutionrelative:myagenda\\homepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,6 +15,7 @@
       "RelativeMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|solutionrelative:myagenda\\homepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
+<<<<<<< HEAD:2_Applicativo/Versioni precedenti/MyAgenda/.vs/MyAgenda/v17/DocumentLayout.json
       "AbsoluteMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|c:\\users\\ska997\\source\\repos\\modulo322\\2_applicativo\\myagenda\\myagenda\\attivita.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|solutionrelative:myagenda\\attivita.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,6 +24,13 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|c:\\users\\ska997\\source\\repos\\modulo322\\2_applicativo\\myagenda\\myagenda\\attivita.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+=======
+      "AbsoluteMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|c:\\users\\uzf668\\source\\repos\\progetto\\modulo322\\2_applicativo\\myagenda\\myagenda\\attivita.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|solutionrelative:myagenda\\attivita.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|c:\\users\\uzf668\\source\\repos\\progetto\\modulo322\\2_applicativo\\myagenda\\myagenda\\attivita.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+>>>>>>> bc5e3112ed061cd975aa018a5c6c58c02cb4ad2d:2_Applicativo/MyAgenda/.vs/MyAgenda/v17/DocumentLayout.json
       "RelativeMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|solutionrelative:myagenda\\attivita.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
@@ -81,7 +93,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD:2_Applicativo/Versioni precedenti/MyAgenda/.vs/MyAgenda/v17/DocumentLayout.json
           "SelectedChildIndex": 7,
+=======
+          "SelectedChildIndex": 6,
+>>>>>>> bc5e3112ed061cd975aa018a5c6c58c02cb4ad2d:2_Applicativo/MyAgenda/.vs/MyAgenda/v17/DocumentLayout.json
           "Children": [
             {
               "$type": "Bookmark",
@@ -93,6 +109,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD:2_Applicativo/Versioni precedenti/MyAgenda/.vs/MyAgenda/v17/DocumentLayout.json
               "DocumentIndex": 3,
               "Title": "Attivita.xaml.cs",
               "DocumentMoniker": "C:\\Users\\ska997\\source\\repos\\Modulo322\\2_Applicativo\\Mateo\\MyAgenda\\Attivita.xaml.cs",
@@ -100,6 +117,15 @@
               "ToolTip": "C:\\Users\\ska997\\source\\repos\\Modulo322\\2_Applicativo\\Mateo\\MyAgenda\\Attivita.xaml.cs",
               "RelativeToolTip": "..\\Mateo\\MyAgenda\\Attivita.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+=======
+              "DocumentIndex": 2,
+              "Title": "Attivita.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\uzf668\\source\\repos\\Progetto\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\Attivita.xaml.cs",
+              "RelativeDocumentMoniker": "MyAgenda\\Attivita.xaml.cs",
+              "ToolTip": "C:\\Users\\uzf668\\source\\repos\\Progetto\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\Attivita.xaml.cs",
+              "RelativeToolTip": "MyAgenda\\Attivita.xaml.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAIA5wD0AAAAwAAAAAAAAAA==",
+>>>>>>> bc5e3112ed061cd975aa018a5c6c58c02cb4ad2d:2_Applicativo/MyAgenda/.vs/MyAgenda/v17/DocumentLayout.json
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-03T12:57:15.313Z"
             },
@@ -137,7 +163,8 @@
               "RelativeToolTip": "MyAgenda\\HomePage.xaml",
               "ViewState": "AgIAADwAAAAAAAAAAAAowD0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-06-03T12:25:25.281Z"
+              "WhenOpened": "2026-06-03T12:25:25.281Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -159,7 +186,11 @@
               "RelativeDocumentMoniker": "MyAgenda\\HomePage.xaml.cs",
               "ToolTip": "C:\\Users\\ska997\\source\\repos\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\HomePage.xaml.cs",
               "RelativeToolTip": "MyAgenda\\HomePage.xaml.cs",
+<<<<<<< HEAD:2_Applicativo/Versioni precedenti/MyAgenda/.vs/MyAgenda/v17/DocumentLayout.json
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+=======
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAfAAAAAAAAAA==",
+>>>>>>> bc5e3112ed061cd975aa018a5c6c58c02cb4ad2d:2_Applicativo/MyAgenda/.vs/MyAgenda/v17/DocumentLayout.json
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-03T12:25:25.288Z",
               "EditorCaption": ""
