@@ -22,7 +22,10 @@ public partial class Login : ContentPage
 
         if (success)
         {
-            AuthService.SaveCurrentUser(username); // salva l'utente loggato
+            AuthService.SaveCurrentUser(username);
+
+            Sessione.Username = username;
+
             Application.Current!.MainPage = new AppShell();
         }
         else

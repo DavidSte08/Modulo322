@@ -1,136 +1,355 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MyAgenda.HomePage">
+             x:Class="MyAgenda.HomePage"
+             BackgroundColor="#F5F7FA">
 
     <Grid ColumnDefinitions="*,*,*,*"
-          RowDefinitions="*,Auto,*,Auto,*,Auto"
+          RowDefinitions="Auto,Auto,*,Auto,*"
           Padding="20"
-          RowSpacing="15"
-          ColumnSpacing="15">
+          RowSpacing="18"
+          ColumnSpacing="18">
 
-        <!-- titolo -->
-        <Border Grid.Row="0"
-                Grid.Column="1"
-                Grid.ColumnSpan="3"
-                Stroke="Gray"
-                StrokeThickness="1"
-                Padding="15"
-                BackgroundColor="LightGray">
-
-            <Label Text="Benvenuto in MyAgenda!"
-                   FontSize="32"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center"/>
-        </Border>
-
-        <!-- account -->
+        <!-- HEADER -->
         <Border Grid.Row="0"
                 Grid.Column="0"
-                Stroke="Gray"
-                StrokeThickness="1"
-                Padding="15">
+                Grid.ColumnSpan="4"
+                StrokeThickness="0"
+                BackgroundColor="#FFFFFF"
+                Padding="20"
+                StrokeShape="RoundRectangle 25">
 
-            <Grid ColumnDefinitions="*,*,*,*"
-                  RowDefinitions="*,*,*">
+            <Grid ColumnDefinitions="Auto,*">
 
-                <Button Text="Vai all'account"
-                        Clicked="OnAccountClicked"
-                        Grid.Row="2"
-                        Grid.Column="0"
-                        Grid.ColumnSpan="4"/>
+                <!-- ACCOUNT -->
+                <Button Text="👤"
+                        WidthRequest="55"
+                        HeightRequest="55"
+                        CornerRadius="27"
+                        FontSize="24"
+                        BackgroundColor="#111827"
+                        TextColor="White"
+                        Clicked="OnAccountClicked"/>
+
+                <!-- TITOLO -->
+                <VerticalStackLayout Grid.Column="1"
+                                     Margin="15,0,0,0"
+                                     VerticalOptions="Center">
+
+                    <Label Text="Benvenuto in MyAgenda"
+                           FontSize="28"
+                           FontAttributes="Bold"
+                           TextColor="#111827"/>
+
+                    <Label Text="Gestisci scuola, impegni e attività"
+                           FontSize="14"
+                           TextColor="#6B7280"/>
+
+                </VerticalStackLayout>
+
             </Grid>
+
         </Border>
 
-        <!--titolo attività-->
+        <!-- ATTIVITA TITLE -->
         <Border Grid.Row="1"
                 Grid.Column="0"
                 Grid.ColumnSpan="3"
-                Stroke="Gray"
-                Padding="10"
-                BackgroundColor="LightBlue">
+                StrokeThickness="0"
+                BackgroundColor="#2563EB"
+                Padding="15"
+                StrokeShape="RoundRectangle 20">
 
-            <Label Text="Le tue attività"
-                   FontSize="24"
+            <Label Text="📅 Prossime attività"
+                   FontSize="22"
+                   FontAttributes="Bold"
+                   TextColor="White"
                    HorizontalOptions="Center"/>
+
         </Border>
 
-        <!--attività-->
-        
-        <Border 
-            Grid.Row="2"
-            Grid.Column="0"
-            Grid.ColumnSpan="3"
-            Stroke="Gray"
-            StrokeThickness="1"
-            Padding="15" >
-            <Grid
-                ColumnDefinitions="*,*,*,*"
-                RowDefinitions="*,*,*" >
-                <Button
-                    Text="Vai alle attività"
-                    Clicked="OnAttivitaClicked"
-                    Grid.Row="1"
-                    Grid.Column="3"/>
+        <!-- ATTIVITA -->
+        <Border Grid.Row="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                BackgroundColor="White"
+                StrokeThickness="0"
+                Padding="18"
+                StrokeShape="RoundRectangle 25">
+
+            <Grid ColumnDefinitions="*,*,*,Auto"
+                  ColumnSpacing="15">
+
+                <!-- EVENTO 1 -->
+                <Border Grid.Column="0"
+                        BackgroundColor="#EEF2FF"
+                        Padding="15"
+                        StrokeThickness="0"
+                        StrokeShape="RoundRectangle 20">
+
+                    <VerticalStackLayout
+                        VerticalOptions="Center"
+                        Spacing="8">
+
+                        <Label Text="EVENTO"
+                               FontSize="12"
+                               TextColor="#6B7280"/>
+
+                        <Label x:Name="Evento1Nome"
+                               Text="Nessun evento"
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               TextColor="#111827"/>
+
+                        <Label x:Name="Evento1Data"
+                               FontSize="13"
+                               TextColor="#374151"/>
+
+                    </VerticalStackLayout>
+
+                </Border>
+
+                <!-- EVENTO 2 -->
+                <Border Grid.Column="1"
+                        BackgroundColor="#ECFDF5"
+                        Padding="15"
+                        StrokeThickness="0"
+                        StrokeShape="RoundRectangle 20">
+
+                    <VerticalStackLayout
+                        VerticalOptions="Center"
+                        Spacing="8">
+
+                        <Label Text="EVENTO"
+                               FontSize="12"
+                               TextColor="#6B7280"/>
+
+                        <Label x:Name="Evento2Nome"
+                               Text="Nessun evento"
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               TextColor="#111827"/>
+
+                        <Label x:Name="Evento2Data"
+                               FontSize="13"
+                               TextColor="#374151"/>
+
+                    </VerticalStackLayout>
+
+                </Border>
+
+                <!-- EVENTO 3 -->
+                <Border Grid.Column="2"
+                        BackgroundColor="#FEF3C7"
+                        Padding="15"
+                        StrokeThickness="0"
+                        StrokeShape="RoundRectangle 20">
+
+                    <VerticalStackLayout
+                        VerticalOptions="Center"
+                        Spacing="8">
+
+                        <Label Text="EVENTO"
+                               FontSize="12"
+                               TextColor="#6B7280"/>
+
+                        <Label x:Name="Evento3Nome"
+                               Text="Nessun evento"
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               TextColor="#111827"/>
+
+                        <Label x:Name="Evento3Data"
+                               FontSize="13"
+                               TextColor="#374151"/>
+
+                    </VerticalStackLayout>
+
+                </Border>
+
+                <!-- BOTTONE -->
+                <Button Grid.Column="3"
+                        Text="→"
+                        WidthRequest="60"
+                        HeightRequest="60"
+                        CornerRadius="30"
+                        FontSize="28"
+                        BackgroundColor="#111827"
+                        TextColor="White"
+                        VerticalOptions="Center"
+                        Clicked="OnAttivitaClicked"/>
+
             </Grid>
+
         </Border>
 
-        <!--calendario-->
+        <!-- CALENDARIO -->
         <Border Grid.Row="1"
                 Grid.RowSpan="4"
                 Grid.Column="3"
-                Grid.ColumnSpan="1"
-                Stroke="Gray"
-                StrokeThickness="1"
-                Padding="15">
+                BackgroundColor="White"
+                StrokeThickness="0"
+                Padding="18"
+                StrokeShape="RoundRectangle 25">
 
-            <VerticalStackLayout Spacing="10">
+            <VerticalStackLayout Spacing="15">
 
-                <Label Text="Calendario"
-                       FontSize="20"
-                       HorizontalOptions="Center"/>
+                <Label Text="🗓 Calendario"
+                       FontSize="24"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       TextColor="#111827"/>
 
                 <DatePicker x:Name="calendarPicker"
                             DateSelected="OnDateSelected"/>
 
-                <Label x:Name="selectedDateLabel"
-                       Text="Nessuna data selezionata"
-                       HorizontalOptions="Center"/>
+                <Border BackgroundColor="#F3F4F6"
+                        StrokeThickness="0"
+                        Padding="10"
+                        StrokeShape="RoundRectangle 15">
 
-                </VerticalStackLayout>
+                    <Label x:Name="selectedDateLabel"
+                           Text="Nessuna data selezionata"
+                           HorizontalOptions="Center"
+                           FontAttributes="Bold"
+                           TextColor="#374151"/>
+
+                </Border>
+
+                <!-- EVENTI DEL GIORNO -->
+                <ScrollView HeightRequest="550">
+
+                    <VerticalStackLayout
+                        x:Name="EventiGiornoLayout"
+                        Spacing="12"/>
+
+                </ScrollView>
+
+            </VerticalStackLayout>
+
         </Border>
 
-        <!-- titolo materie -->
+        <!-- MATERIE TITLE -->
         <Border Grid.Row="3"
                 Grid.Column="0"
                 Grid.ColumnSpan="3"
-                Stroke="Gray"
-                Padding="10"
-                BackgroundColor="LightBlue">
+                StrokeThickness="0"
+                BackgroundColor="#7C3AED"
+                Padding="15"
+                StrokeShape="RoundRectangle 20">
 
-            <Label Text="Le tue materie"
-                   FontSize="24"
+            <Label Text="📚 Migliori materie"
+                   FontSize="22"
+                   FontAttributes="Bold"
+                   TextColor="White"
                    HorizontalOptions="Center"/>
+
         </Border>
 
-        
-        <!--materie-->
-        <Border 
-            Grid.Row="4"
-            Grid.Column="0"
-            Grid.ColumnSpan="3"
-            Stroke="Gray"
-            StrokeThickness="1"
-            Padding="15" >
-            <Grid 
-                ColumnDefinitions="*,*,*,*"
-                RowDefinitions="*,*,*" >
-                <Button 
-                    Text="Vai alle materie"
-                    Clicked="OnMaterieClicked"
-                    Grid.Row="1"
-                    Grid.Column="3"/>
+        <!-- MATERIE -->
+        <Border Grid.Row="4"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                BackgroundColor="White"
+                StrokeThickness="0"
+                Padding="18"
+                StrokeShape="RoundRectangle 25">
+
+            <Grid ColumnDefinitions="*,*,*,Auto"
+                  ColumnSpacing="15">
+
+                <!-- TOP 1 -->
+                <Border Grid.Column="0"
+                        BackgroundColor="#FEF3C7"
+                        Padding="15"
+                        StrokeThickness="0"
+                        StrokeShape="RoundRectangle 20">
+
+                    <VerticalStackLayout
+                        VerticalOptions="Center"
+                        Spacing="10">
+
+                        <Label Text="🥇"
+                               FontSize="40"
+                               HorizontalOptions="Center"/>
+
+                        <Label x:Name="top1Label"
+                               Text="-"
+                               HorizontalOptions="Center"
+                               HorizontalTextAlignment="Center"
+                               FontAttributes="Bold"
+                               TextColor="#111827"/>
+
+                    </VerticalStackLayout>
+
+                </Border>
+
+                <!-- TOP 2 -->
+                <Border Grid.Column="1"
+                        BackgroundColor="#E5E7EB"
+                        Padding="15"
+                        StrokeThickness="0"
+                        StrokeShape="RoundRectangle 20">
+
+                    <VerticalStackLayout
+                        VerticalOptions="Center"
+                        Spacing="10">
+
+                        <Label Text="🥈"
+                               FontSize="40"
+                               HorizontalOptions="Center"/>
+
+                        <Label x:Name="top2Label"
+                               Text="-"
+                               HorizontalOptions="Center"
+                               HorizontalTextAlignment="Center"
+                               FontAttributes="Bold"
+                               TextColor="#111827"/>
+
+                    </VerticalStackLayout>
+
+                </Border>
+
+                <!-- TOP 3 -->
+                <Border Grid.Column="2"
+                        BackgroundColor="#FCD9B6"
+                        Padding="15"
+                        StrokeThickness="0"
+                        StrokeShape="RoundRectangle 20">
+
+                    <VerticalStackLayout
+                        VerticalOptions="Center"
+                        Spacing="10">
+
+                        <Label Text="🥉"
+                               FontSize="40"
+                               HorizontalOptions="Center"/>
+
+                        <Label x:Name="top3Label"
+                               Text="-"
+                               HorizontalOptions="Center"
+                               HorizontalTextAlignment="Center"
+                               FontAttributes="Bold"
+                               TextColor="#111827"/>
+
+                    </VerticalStackLayout>
+
+                </Border>
+
+                <!-- BOTTONE -->
+                <Button Grid.Column="3"
+                        Text="→"
+                        WidthRequest="60"
+                        HeightRequest="60"
+                        CornerRadius="30"
+                        FontSize="28"
+                        BackgroundColor="#111827"
+                        TextColor="White"
+                        VerticalOptions="Center"
+                        Clicked="OnMaterieClicked"/>
+
             </Grid>
+
         </Border>
 
     </Grid>

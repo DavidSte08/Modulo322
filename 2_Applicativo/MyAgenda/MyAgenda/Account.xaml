@@ -29,7 +29,8 @@
 
                             <Label Text="Password" FontSize="14" TextColor="#333333"/>
                             <Label x:Name="LblPassword" Grid.Column="1" Text="********" FontAttributes="Italic" IsVisible="True"/>
-                            <Entry x:Name="TxtPassword" IsPassword="True" BackgroundColor="White" IsVisible="False"/>
+                            <Entry x:Name="TxtPasswordOld" IsPassword="True" BackgroundColor="White" IsVisible="False" Placeholder="Inserire la vecchia password"/>
+                            <Entry x:Name="TxtPassword" IsPassword="True" BackgroundColor="White" IsVisible="False" Placeholder="Inserire la nuova password"/>
                         </VerticalStackLayout>
                     </Grid>
                 </Grid>
