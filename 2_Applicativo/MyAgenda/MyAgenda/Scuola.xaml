@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Commenti con ai -->
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyAgenda.Scuola"
+             Title="Materie">
+
+    <ScrollView>
+
+        <VerticalStackLayout Padding="20"
+                             Spacing="20">
+
+            <!-- HEADER -->
+            <Grid ColumnDefinitions="Auto,*,Auto">
+
+                <Button Text="←"
+                    WidthRequest="50"
+                    HeightRequest="50"
+                        CornerRadius="25"
+                    BackgroundColor="Black"
+                    Padding="0"
+                    Margin="0,0,0,0"
+                    Clicked="OnHomeClicked"/>
+
+                <!-- semestre -->
+                <Border Grid.Column="1"
+                        HorizontalOptions="Start"
+                        Margin="20,0,0,0"
+                        Stroke="Gray"
+                        StrokeThickness="1"
+                        BackgroundColor="LightGray"
+                        Padding="15,10">
+
+                    <Label x:Name="selectedSemestreLabel"
+                        Text="Primo Semestre"
+                        HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+                </Border>
+
+                <!-- picker -->
+                <Picker Grid.Column="2"
+                        WidthRequest="250"
+                        Title="Selezione semestre"
+                        x:Name="semestrePicker"
+                        SelectedIndexChanged ="OnSemestreSelected">
+
+                    <Picker.Items>
+                        <x:String>Primo semestre</x:String>
+                        <x:String>Secondo semestre</x:String>
+                    </Picker.Items>
+
+                </Picker>
+
+            </Grid>
+
+            <!-- BOTTONI -->
+            <HorizontalStackLayout HorizontalOptions="End"
+                                   Spacing="10">
+
+                <Button Text="Aggiungi Materia"
+                        Clicked="OnAddMateriaClicked"/>
+
+                <Button Text="Modifica materia"
+                        Clicked="OnModificaMateriaClicked"/>
+
+                <Button Text="Elimina materia"
+                        Clicked="OnEliminaMateriaClicked"/>
+
+            </HorizontalStackLayout>
+
+            <!-- LISTA MATERIE -->
+            <CollectionView x:Name="MaterieCollection"
+                            >
+
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Vertical"
+                                     Span="2"
+                                     VerticalItemSpacing="10"
+                     HorizontalItemSpacing="10"/>
+                                     
+                </CollectionView.ItemsLayout>
+
+                <CollectionView.ItemTemplate
+                    >
+
+                    <DataTemplate
+                        >
+
+                        <Border Stroke="LightGray"
+                                StrokeThickness="1"
+                                Padding="20"
+                                Margin="100">
+
+                            <Grid ColumnDefinitions="*,Auto"
+                                  >
+
+                                <!-- sinistra -->
+                                <VerticalStackLayout Spacing="10"
+                                                     >
+
+                                    <Label Text="{Binding Nome}"
+                                           FontSize="20"
+                                           FontAttributes="Bold"/>
+
+                                    <HorizontalStackLayout Spacing="10"
+                                                           >
+
+                                        <Button Text="Aggiungi nota"
+                                                Clicked="OnAddNotaClicked"/>
+
+                                        <Button Text="Modifica nota"
+                                                Clicked="OnModificaNotaClicked"/>
+
+                                        <Button Text="Elimina nota"
+                                                Clicked="OnEliminaNotaClicked"/>
+
+                                    </HorizontalStackLayout>
+
+                                </VerticalStackLayout>
+
+                                <!-- media -->
+                                <Border Grid.Column="1"
+                                        WidthRequest="60"
+                                        HeightRequest="60"
+                                        StrokeShape="RoundRectangle 30"
+                                        BackgroundColor="#DDDDDD"
+                                        HorizontalOptions="Center"
+                                        VerticalOptions="Center">
+
+                                    <Label Text="{Binding Media}"
+                                           HorizontalOptions="Center"
+                                           VerticalOptions="Center"
+                                           FontSize="20"
+                                           FontAttributes="Bold"/>
+
+                                </Border>
+
+                            </Grid>
+
+                        </Border>
+
+                    </DataTemplate>
+
+                </CollectionView.ItemTemplate>
+
+            </CollectionView>
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>

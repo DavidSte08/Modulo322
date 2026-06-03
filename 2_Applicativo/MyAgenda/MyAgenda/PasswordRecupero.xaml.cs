@@ -1,5 +1,6 @@
 namespace MyAgenda;
 
+// Classe "PasswordRecupero" per corrispondere a x:Class="MyAgenda.PasswordRecupero" in PasswordRecupero.xaml
 public partial class PasswordRecupero : ContentPage
 {
     public PasswordRecupero()
@@ -11,14 +12,13 @@ public partial class PasswordRecupero : ContentPage
     {
         string email = EmailEntry.Text?.Trim() ?? "";
 
-        if (string.IsNullOrEmpty(email) || !email.Contains('@'))
+        if (string.IsNullOrEmpty(email))
         {
-            await DisplayAlert("Errore", "Inserisci un indirizzo email valido.", "OK");
+            await DisplayAlert("Errore", "Inserisci la tua email.", "OK");
             return;
         }
 
-        // TODO: implementare recupero reale via backend
-        await DisplayAlert("Inviato", "Se l'account esiste, riceverai le istruzioni via email.", "OK");
+        await DisplayAlert("Inviato", "Controlla la tua email per le istruzioni.", "OK");
         await Navigation.PopAsync();
     }
 }

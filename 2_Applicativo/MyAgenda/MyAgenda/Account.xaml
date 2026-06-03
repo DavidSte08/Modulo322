@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyAgenda.Account"
+             Title="Account">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+
+            <!-- ==========================================
+                 1. SEZIONE DETTAGLI UTENTE 
+                 ========================================== -->
+            <Label Text="Dettagli Utente" FontSize="16" FontAttributes="Bold" TextColor="#555555" />
+            <Border StrokeShape="RoundRectangle 10" BackgroundColor="#E0E0E0" StrokeThickness="0" Padding="15">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnDettagliCardTapped" />
+                </Border.GestureRecognizers>
+                <Grid RowDefinitions="Auto, Auto" ColumnDefinitions="Auto, *, Auto">
+                    <Button x:Name="BtnApplicaDettagli" Grid.Column="2" Text="Applica modifiche" FontSize="12" HeightRequest="30" BackgroundColor="#FFFFFF" TextColor="#333333" CornerRadius="15" IsVisible="False" Clicked="OnApplicaDettagliClicked"/>
+                    <Grid Grid.Row="1" Grid.ColumnSpan="3" ColumnDefinitions="Auto, *" Margin="0,10,0,0">
+                        <Grid VerticalOptions="Center">
+                            <Ellipse WidthRequest="60" HeightRequest="60" Fill="#888888"/>
+                            <Image x:Name="ImgEditIcon" Source="edit_small_icon.png" WidthRequest="18" HeightRequest="18" HorizontalOptions="End" VerticalOptions="Start" IsVisible="False"/>
+                        </Grid>
+                        <VerticalStackLayout Grid.Column="1" VerticalOptions="Center" Margin="15,0,0,0">
+                            <Label Text="Nome Utente:" FontSize="14" TextColor="#333333"/>
+                            <Label x:Name="LblNomeUtente" Text="Nome Utente" FontSize="16" FontAttributes="Italic" TextColor="#000000" IsVisible="True"/>
+                            <Entry x:Name="TxtNomeUtente" FontSize="16" TextColor="#000000" BackgroundColor="White" IsVisible="False"/>
+
+                            <Label Text="Password" FontSize="14" TextColor="#333333"/>
+                            <Label x:Name="LblPassword" Grid.Column="1" Text="********" FontAttributes="Italic" IsVisible="True"/>
+                            <Entry x:Name="TxtPasswordOld" IsPassword="True" BackgroundColor="White" IsVisible="False" Placeholder="Inserire la vecchia password"/>
+                            <Entry x:Name="TxtPassword" IsPassword="True" BackgroundColor="White" IsVisible="False" Placeholder="Inserire la nuova password"/>
+                        </VerticalStackLayout>
+                    </Grid>
+                </Grid>
+            </Border>
+
+            <!-- ==========================================
+                 2. SEZIONE GENERALI 
+                 ========================================== -->
+            <Label Text="Generali" FontSize="16" FontAttributes="Bold" TextColor="#555555" />
+            <Border StrokeShape="RoundRectangle 10" BackgroundColor="#E0E0E0" StrokeThickness="0" Padding="15">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnGeneraliCardTapped" />
+                </Border.GestureRecognizers>
+                <Grid RowDefinitions="Auto, Auto, Auto" ColumnDefinitions="*, *">
+                    <Button x:Name="BtnApplicaGenerali" Grid.Column="1" Text="Applica modifiche" FontSize="12" HeightRequest="30" HorizontalOptions="End" BackgroundColor="#FFFFFF" TextColor="#333333" CornerRadius="15" IsVisible="False" Clicked="OnApplicaGeneraliClicked"/>
+
+                    <Label Grid.Row="1" Grid.Column="0" Text="Promemoria" VerticalOptions="Center" FontAttributes="Bold" Margin="0,10,0,10"/>
+                    <Label x:Name="LblPromemoria" Grid.Row="1" Grid.Column="1" Text="Abilita/Disabilita" HorizontalOptions="End" VerticalOptions="Center" FontAttributes="Italic" IsVisible="True"/>
+                    <Switch x:Name="SwPromemoria" Grid.Row="1" Grid.Column="1" HorizontalOptions="End" VerticalOptions="Center" IsVisible="False"/>
+                </Grid>
+            </Border>
+
+            <!-- ==========================================
+                 3. SEZIONE PERSONALIZZAZIONE 
+                 ========================================== -->
+            <Label Text="Personalizzazione" FontSize="16" FontAttributes="Bold" TextColor="#555555" />
+            <Border StrokeShape="RoundRectangle 10" BackgroundColor="#E0E0E0" StrokeThickness="0" Padding="15">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnPersonalizzazioneCardTapped" />
+                </Border.GestureRecognizers>
+                <Grid RowDefinitions="Auto, Auto, Auto, Auto" ColumnDefinitions="*, *">
+                    <Button x:Name="BtnApplicaPersonalizzazione" Grid.Column="1" Text="Applica modifiche" FontSize="12" HeightRequest="30" HorizontalOptions="End" BackgroundColor="#FFFFFF" TextColor="#333333" CornerRadius="15" IsVisible="False" Clicked="OnApplicaPersonalizzazioneClicked"/>
+
+                    <Label Grid.Row="1" Grid.Column="0" Text="Stile colori" VerticalOptions="Center" FontAttributes="Bold" Margin="0,10,0,10"/>
+                    <Label x:Name="LblStileColori" Grid.Row="1" Grid.Column="1" Text="Colori1" HorizontalOptions="End" VerticalOptions="Center" FontAttributes="Italic" IsVisible="True"/>
+                    <Picker x:Name="PkrStileColori" Grid.Row="1" Grid.Column="1" HorizontalOptions="End" WidthRequest="120" IsVisible="False">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Colori1</x:String>
+                                <x:String>Colori2</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+
+                    <Label Grid.Row="2" Grid.Column="0" Text="Stile font" VerticalOptions="Center" FontAttributes="Bold" Margin="0,0,0,10"/>
+                    <Label x:Name="LblStileFont" Grid.Row="2" Grid.Column="1" Text="Font1" HorizontalOptions="End" VerticalOptions="Center" FontAttributes="Italic" IsVisible="True"/>
+                    <Picker x:Name="PkrStileFont" Grid.Row="2" Grid.Column="1" HorizontalOptions="End" WidthRequest="120" IsVisible="False">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Font1</x:String>
+                                <x:String>Font2</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+
+                    <Label Grid.Row="3" Grid.Column="0" Text="Suono notifiche" VerticalOptions="Center" FontAttributes="Bold"/>
+                    <Label x:Name="LblSuonoNotifiche" Grid.Row="3" Grid.Column="1" Text="Suono1" HorizontalOptions="End" VerticalOptions="Center" FontAttributes="Italic" IsVisible="True"/>
+                    <Picker x:Name="PkrSuonoNotifiche" Grid.Row="3" Grid.Column="1" HorizontalOptions="End" WidthRequest="120" IsVisible="False">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Suono1</x:String>
+                                <x:String>Suono2</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+                </Grid>
+            </Border>
+
+            <!-- PULSANTE LOGOUT COLEGATO AL METODO C# -->
+            <Button Text="Logout" 
+                HorizontalOptions="End" 
+                BackgroundColor="#D32F2F" 
+                TextColor="White" 
+                CornerRadius="5" 
+                HeightRequest="40" 
+                WidthRequest="120" 
+                Margin="0,10,0,20"
+                Clicked="OnLogoutClicked"/> 
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -21,6 +21,8 @@ namespace MyAgenda
         protected override void OnAppearing()
         {
             base.OnAppearing();
+            CaricaEventiGiorno(DateTime.Today);
+            CaricaProssimiEventi();
 
             CaricaTopMaterie();
         }
@@ -264,3 +266,5 @@ namespace MyAgenda
     }
     
 }
+//La pagina contiene prodotti generati dall ai
+//Commentato con ai quasi tutto

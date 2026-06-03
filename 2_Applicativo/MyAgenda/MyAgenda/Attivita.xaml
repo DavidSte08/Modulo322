@@ -47,12 +47,9 @@
                FontAttributes="Bold"
                FontSize="18"
                            />
-                    <Picker x:Name="nomePicker"
-                Title="Seleziona"
-                            TitleColor="white"
-                            BackgroundColor="white"/>
+                    
 
-                    <Label Text="Oppure nuovo nome"
+                    <Label Text="Nome Attivita"
                            TextColor="white"/>
 
                     <Entry x:Name="nomeEntry"
