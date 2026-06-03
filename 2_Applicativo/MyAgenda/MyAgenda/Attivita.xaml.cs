@@ -11,8 +11,18 @@ public partial class Attivita : ContentPage
     List<string> nomiPrecedenti =
         new List<string>();
 
-    List<string> tipiPrecedenti =
-        new List<string>();
+    List<string> tipiPrecedenti = new List<string>();
+
+    readonly List<string> tipiDisponibili =
+        new()
+        {
+        "Scuola",
+        "Sport",
+        "Lavoro",
+        "Personale",
+        "Importante",
+        "Altro"
+        };
 
     string filePath =
         Path.Combine(
@@ -23,103 +33,97 @@ public partial class Attivita : ContentPage
     {
         InitializeComponent();
 
+        tipoPicker.ItemsSource = tipiDisponibili;
+
         CaricaDati();
 
-        AggiornaQuickAdd();
+        AggiornaNomi();
 
         calendarPicker.Date = DateTime.Today;
 
-        quickDatePicker.Date = DateTime.Today;
+        nuovaDataPicker.Date = DateTime.Today;
 
         AggiornaCalendario(DateTime.Today);
     }
 
+    private void AggiornaNomi()
+    {
+        nomiPrecedenti.Clear();
+
+        foreach (AttivitaModel a in attivita)
+        {
+            if (!nomiPrecedenti.Contains(a.Nome))
+            {
+                nomiPrecedenti.Add(a.Nome);
+            }
+        }
+
+        nomePicker.ItemsSource = null;
+        nomePicker.ItemsSource = nomiPrecedenti;
+    }
+    private Color OttieniColoreEvento(string tipo)
+    {
+        switch (tipo)
+        {
+            case "Scuola":
+                return Color.FromArgb("#2563EB");
+
+            case "Sport":
+                return Color.FromArgb("#16A34A");
+
+            case "Lavoro":
+                return Color.FromArgb("#EA580C");
+
+            case "Personale":
+                return Color.FromArgb("#7C3AED");
+
+            case "Importante":
+                return Color.FromArgb("#DC2626");
+
+            default:
+                return Color.FromArgb("#6B7280");
+        }
+    }
     // AGGIUNGI EVENTO
     private async void OnAddEventoClicked(object sender, EventArgs e)
     {
-        string nome =
-            await DisplayPromptAsync(
-                "Evento",
-                "Nome evento");
+        string nome = "";
+
+        if (!string.IsNullOrWhiteSpace(nomeEntry.Text))
+        {
+            nome = nomeEntry.Text.Trim();
+        }
+        else if (nomePicker.SelectedItem != null)
+        {
+            nome = nomePicker.SelectedItem.ToString();
+        }
 
         if (string.IsNullOrWhiteSpace(nome))
-            return;
-
-        string tipo =
-            await DisplayPromptAsync(
-                "Tipo",
-                "Tipo evento");
-
-        if (string.IsNullOrWhiteSpace(tipo))
-            return;
-
-        string dataStringa =
-            await DisplayPromptAsync(
-                "Data",
-                "Formato: dd/mm/yyyy");
-
-        if (string.IsNullOrWhiteSpace(dataStringa))
-            return;
-
-        string oraStringa =
-            await DisplayPromptAsync(
-                "Ora",
-                "Formato: hh:mm");
-
-        if (string.IsNullOrWhiteSpace(oraStringa))
-            return;
-
-        try
-        {
-            DateTime data =
-                DateTime.Parse(
-                    dataStringa + " " + oraStringa);
-
-            attivita.Add(new AttivitaModel
-            {
-                Nome = nome,
-                Tipo = tipo,
-                Data = data
-            });
-
-            SalvaDati();
-
-            AggiornaQuickAdd();
-
-            AggiornaCalendario(calendarPicker.Date);
-        }
-        catch
         {
             await DisplayAlert(
                 "Errore",
-                "Data o ora non valida",
-                "OK");
-        }
-    }
-
-    // QUICK ADD
-    private async void OnQuickAddClicked(object sender, EventArgs e)
-    {
-        if (quickNomePicker.SelectedItem == null ||
-            quickTipoPicker.SelectedItem == null)
-        {
-            await DisplayAlert(
-                "Errore",
-                "Completa tutti i campi",
+                "Inserisci o seleziona un nome",
                 "OK");
 
             return;
         }
 
-        string nome =
-            quickNomePicker.SelectedItem.ToString();
+        if (tipoPicker.SelectedItem == null)
+        {
+            await DisplayAlert(
+                "Errore",
+                "Seleziona un tipo",
+                "OK");
+
+            return;
+        }
 
         string tipo =
-            quickTipoPicker.SelectedItem.ToString();
+            tipoPicker.SelectedItem.ToString();
 
         DateTime data =
-            quickDatePicker.Date +
-            quickTimePicker.Time;
+            nuovaDataPicker.Date +
+            nuovaOraPicker.Time;
 
         attivita.Add(new AttivitaModel
         {
@@ -130,36 +134,18 @@ public partial class Attivita : ContentPage
 
         SalvaDati();
 
-        AggiornaQuickAdd();
+        AggiornaNomi();
 
         AggiornaCalendario(calendarPicker.Date);
+
+        nomeEntry.Text = "";
+
+        await DisplayAlert(
+            "Successo",
+            "Evento creato",
+            "OK");
     }
-
-    // AGGIORNA PICKER QUICK ADD
-    private void AggiornaQuickAdd()
-    {
-        nomiPrecedenti.Clear();
-        tipiPrecedenti.Clear();
-
-        foreach (AttivitaModel a in attivita)
-        {
-            if (!nomiPrecedenti.Contains(a.Nome))
-            {
-                nomiPrecedenti.Add(a.Nome);
-            }
-
-            if (!tipiPrecedenti.Contains(a.Tipo))
-            {
-                tipiPrecedenti.Add(a.Tipo);
-            }
-        }
-
-        quickNomePicker.ItemsSource = null;
-        quickTipoPicker.ItemsSource = null;
-
-        quickNomePicker.ItemsSource = nomiPrecedenti;
-        quickTipoPicker.ItemsSource = tipiPrecedenti;
-    }
+    
 
     // CALENDARIO
     private void AggiornaCalendario(DateTime dataBase)
@@ -186,6 +172,7 @@ public partial class Attivita : ContentPage
                 new ColumnDefinition
                 {
                     Width = 140
+                    
                 });
         }
 
@@ -346,7 +333,7 @@ public partial class Attivita : ContentPage
                     Border box = new Border
                     {
                         BackgroundColor =
-                            Color.FromArgb("#666666"),
+    OttieniColoreEvento(evento.Tipo),
 
                         StrokeThickness = 0,
 

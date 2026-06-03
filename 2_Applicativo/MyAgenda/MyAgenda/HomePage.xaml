@@ -60,7 +60,7 @@
                 Padding="15"
                 StrokeShape="RoundRectangle 20">
 
-            <Label Text="📅 Prossime attività"
+            <Label Text=" Prossime attività"
                    FontSize="22"
                    FontAttributes="Bold"
                    TextColor="White"
@@ -194,7 +194,7 @@
 
             <VerticalStackLayout Spacing="15">
 
-                <Label Text="🗓 Calendario"
+                <Label Text=" Calendario"
                        FontSize="24"
                        FontAttributes="Bold"
                        HorizontalOptions="Center"
@@ -238,7 +238,7 @@
                 Padding="15"
                 StrokeShape="RoundRectangle 20">
 
-            <Label Text="📚 Migliori materie"
+            <Label Text=" Migliori materie"
                    FontSize="22"
                    FontAttributes="Bold"
                    TextColor="White"

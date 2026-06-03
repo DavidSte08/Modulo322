@@ -17,15 +17,11 @@
                     WidthRequest="40"
                     HeightRequest="40"
                     CornerRadius="20"
-                    BackgroundColor="White"
+                    BackgroundColor="Black"
                     HorizontalOptions="Start"
                     Clicked="OnHomeClicked"/>
 
-            <!-- AGGIUNGI -->
-            <Button Text="Aggiungi Evento"
-                    HeightRequest="40"
-                    BackgroundColor="#D9D9D9"
-                    Clicked="OnAddEventoClicked"/>
+            
 
             <!-- DATE PICKER -->
             <Border Stroke="#CCCCCC"
@@ -40,62 +36,76 @@
                 </VerticalStackLayout>
 
             </Border>
-            <!-- QUICK ADD -->
-
+            <!-- AGGIUNGI -->
             <Border Stroke="#CCCCCC"
-        BackgroundColor="White"
+        BackgroundColor="#ccc"
         Padding="10">
 
                 <VerticalStackLayout Spacing="10">
 
-                    <Label Text="Quick Add"
+                    <Label Text="Aggiungi Attività"
                FontAttributes="Bold"
-               FontSize="18"/>
+               FontSize="18"
+                           />
+                    <Picker x:Name="nomePicker"
+                Title="Seleziona"
+                            TitleColor="white"
+                            BackgroundColor="white"/>
 
-                    <!-- NOME -->
-                    <Picker x:Name="quickNomePicker"
-                Title="Nome"/>
+                    <Label Text="Oppure nuovo nome"
+                           TextColor="white"/>
 
-                    <!-- TIPO -->
-                    <Picker x:Name="quickTipoPicker"
-                Title="Tipo"/>
+                    <Entry x:Name="nomeEntry"
+               Placeholder="Nome attività"
+                           BackgroundColor="white"/>
 
-                    <!-- DATA -->
-                    <DatePicker x:Name="quickDatePicker"/>
+                    
 
-                    <!-- ORA -->
-                    <TimePicker x:Name="quickTimePicker"/>
+                    <Picker x:Name="tipoPicker"
+                Title="Tipo"
+                            TitleColor="White"
+                            BackgroundColor="white"/>
 
-                    <!-- BOTTONE -->
-                    <Button Text="Add"
-                Clicked="OnQuickAddClicked"/>
+                    <DatePicker x:Name="nuovaDataPicker"
+                                BackgroundColor="white"/>
+
+                    <TimePicker x:Name="nuovaOraPicker"
+                                BackgroundColor="white"/>
+
+                    <Button Text="Crea Evento"
+                BackgroundColor="#2563EB"
+                TextColor="White"
+                Clicked="OnAddEventoClicked"/>
 
                 </VerticalStackLayout>
 
             </Border>
 
+
         </VerticalStackLayout>
 
-        <!-- CALENDARIO -->
+        
         <!-- CALENDARIO -->
         <Grid Grid.Column="1"
       RowDefinitions="40,*">
 
             <!-- HEADER FISSO -->
             <ScrollView x:Name="HeaderScroll"
-                Grid.Row="0"
-                Orientation="Horizontal"
-                HorizontalScrollBarVisibility="Never">
+                        Grid.Row="0"
+                        BackgroundColor="Black"
+                        Orientation="Horizontal"
+                        HorizontalScrollBarVisibility="Never">
 
                 <Grid x:Name="HeaderGrid"
-              HeightRequest="40"
-              ColumnSpacing="1"
-              BackgroundColor="#BBBBBB"/>
+                      HeightRequest="40"
+                      ColumnSpacing="1"
+                      BackgroundColor="#b9b9b9"/>
 
             </ScrollView>
 
             <!-- SCROLL VERTICALE -->
             <ScrollView Grid.Row="1"
+                        BackgroundColor="AliceBlue"
                 Orientation="Vertical">
 
                 <!-- SCROLL ORIZZONTALE -->
@@ -106,7 +116,7 @@
                     <Grid x:Name="CalendarioGrid"
                   RowSpacing="1"
                   ColumnSpacing="1"
-                  BackgroundColor="#BBBBBB"/>
+                  BackgroundColor="White"/>
 
                 </ScrollView>
 

@@ -12,22 +12,18 @@
         <VerticalStackLayout Padding="15"
                              Spacing="15">
 
-            <!-- BACK -->
+            <!-- HOME -->
             <Button Text="←"
                     WidthRequest="40"
                     HeightRequest="40"
                     CornerRadius="20"
-                    BackgroundColor="White"
+                    BackgroundColor="Black"
                     HorizontalOptions="Start"
                     Clicked="OnHomeClicked"/>
 
-            <!-- AGGIUNGI -->
-            <Button Text="Aggiungi Evento"
-                    HeightRequest="40"
-                    BackgroundColor="#D9D9D9"
-                    Clicked="OnAddEventoClicked"/>
+            
 
-            <!-- CALENDARIO -->
+            <!-- DATE PICKER -->
             <Border Stroke="#CCCCCC"
                     BackgroundColor="White"
                     Padding="10">
@@ -40,22 +36,93 @@
                 </VerticalStackLayout>
 
             </Border>
+            <!-- AGGIUNGI -->
+            <Border Stroke="#CCCCCC"
+        BackgroundColor="#ccc"
+        Padding="10">
+
+                <VerticalStackLayout Spacing="10">
+
+                    <Label Text="Aggiungi Attività"
+               FontAttributes="Bold"
+               FontSize="18"
+                           />
+                    <Picker x:Name="nomePicker"
+                Title="Seleziona"
+                            TitleColor="white"
+                            BackgroundColor="white"/>
+
+                    <Label Text="Oppure nuovo nome"
+                           TextColor="white"/>
+
+                    <Entry x:Name="nomeEntry"
+               Placeholder="Nome attività"
+                           BackgroundColor="white"/>
+
+                    
+
+                    <Picker x:Name="tipoPicker"
+                Title="Tipo"
+                            TitleColor="White"
+                            BackgroundColor="white"/>
+
+                    <DatePicker x:Name="nuovaDataPicker"
+                                BackgroundColor="white"/>
+
+                    <TimePicker x:Name="nuovaOraPicker"
+                                BackgroundColor="white"/>
+
+                    <Button Text="Crea Evento"
+                BackgroundColor="#2563EB"
+                TextColor="White"
+                Clicked="OnAddEventoClicked"/>
+
+                </VerticalStackLayout>
+
+            </Border>
+
 
         </VerticalStackLayout>
 
-        <!-- TABELLA -->
-        <ScrollView Grid.Column="1"
-                    Orientation="Both">
+        
+        <!-- CALENDARIO -->
+        <Grid Grid.Column="1"
+      RowDefinitions="40,*">
 
-            <Grid x:Name="CalendarioGrid"
-                  Padding="10"
+            <!-- HEADER FISSO -->
+            <ScrollView x:Name="HeaderScroll"
+                        Grid.Row="0"
+                        BackgroundColor="Black"
+                        Orientation="Horizontal"
+                        HorizontalScrollBarVisibility="Never">
+
+                <Grid x:Name="HeaderGrid"
+                      HeightRequest="40"
+                      ColumnSpacing="1"
+                      BackgroundColor="#b9b9b9"/>
+
+            </ScrollView>
+
+            <!-- SCROLL VERTICALE -->
+            <ScrollView Grid.Row="1"
+                        BackgroundColor="AliceBlue"
+                Orientation="Vertical">
+
+                <!-- SCROLL ORIZZONTALE -->
+                <ScrollView x:Name="BodyScroll"
+                    Orientation="Horizontal"
+                    Scrolled="BodyScroll_Scrolled">
+
+                    <Grid x:Name="CalendarioGrid"
                   RowSpacing="1"
                   ColumnSpacing="1"
-                  BackgroundColor="#BBBBBB">
+                  BackgroundColor="White"/>
 
-            </Grid>
+                </ScrollView>
 
-        </ScrollView>
+            </ScrollView>
+
+        </Grid>
 
     </Grid>
 
