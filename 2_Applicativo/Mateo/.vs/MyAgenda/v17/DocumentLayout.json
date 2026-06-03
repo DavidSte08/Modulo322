@@ -1,22 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\uzf668\\source\\repos\\Progetto\\Modulo322\\2_Applicativo\\Mateo\\",
+  "WorkspaceRootPath": "C:\\DatiAllievo\\Matteo\\GitHub\\Modulo322\\2_Applicativo\\Mateo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|c:\\users\\uzf668\\source\\repos\\progetto\\modulo322\\2_applicativo\\mateo\\myagenda\\scuola.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|solutionrelative:myagenda\\scuola.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|c:\\users\\uzf668\\source\\repos\\progetto\\modulo322\\2_applicativo\\mateo\\myagenda\\homepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|solutionrelative:myagenda\\homepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|c:\\users\\uzf668\\source\\repos\\progetto\\modulo322\\2_applicativo\\mateo\\myagenda\\account.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|c:\\datiallievo\\matteo\\github\\modulo322\\2_applicativo\\mateo\\myagenda\\account.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|solutionrelative:myagenda\\account.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|c:\\users\\uzf668\\source\\repos\\progetto\\modulo322\\2_applicativo\\mateo\\myagenda\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|c:\\datiallievo\\matteo\\github\\modulo322\\2_applicativo\\mateo\\myagenda\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|solutionrelative:myagenda\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|c:\\datiallievo\\matteo\\github\\modulo322\\2_applicativo\\mateo\\myagenda\\scuola.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|solutionrelative:myagenda\\scuola.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|c:\\datiallievo\\matteo\\github\\modulo322\\2_applicativo\\mateo\\myagenda\\homepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|solutionrelative:myagenda\\homepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,35 +38,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AppShell.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\uzf668\\source\\repos\\Progetto\\Modulo322\\2_Applicativo\\Mateo\\MyAgenda\\AppShell.xaml.cs",
-              "RelativeDocumentMoniker": "MyAgenda\\AppShell.xaml.cs",
-              "ToolTip": "C:\\Users\\uzf668\\source\\repos\\Progetto\\Modulo322\\2_Applicativo\\Mateo\\MyAgenda\\AppShell.xaml.cs",
-              "RelativeToolTip": "MyAgenda\\AppShell.xaml.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAxwA8AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-22T13:57:46.002Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Account.xaml",
-              "DocumentMoniker": "C:\\Users\\uzf668\\source\\repos\\Progetto\\Modulo322\\2_Applicativo\\Mateo\\MyAgenda\\Account.xaml",
-              "RelativeDocumentMoniker": "MyAgenda\\Account.xaml",
-              "ToolTip": "C:\\Users\\uzf668\\source\\repos\\Progetto\\Modulo322\\2_Applicativo\\Mateo\\MyAgenda\\Account.xaml",
-              "RelativeToolTip": "MyAgenda\\Account.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-22T13:56:00.133Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "AppShell.xaml.cs",
+              "DocumentMoniker": "C:\\DatiAllievo\\Matteo\\GitHub\\Modulo322\\2_Applicativo\\Mateo\\MyAgenda\\AppShell.xaml.cs",
+              "RelativeDocumentMoniker": "MyAgenda\\AppShell.xaml.cs",
+              "ToolTip": "C:\\DatiAllievo\\Matteo\\GitHub\\Modulo322\\2_Applicativo\\Mateo\\MyAgenda\\AppShell.xaml.cs",
+              "RelativeToolTip": "MyAgenda\\AppShell.xaml.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-22T13:57:46.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Account.xaml",
+              "DocumentMoniker": "C:\\DatiAllievo\\Matteo\\GitHub\\Modulo322\\2_Applicativo\\Mateo\\MyAgenda\\Account.xaml",
+              "RelativeDocumentMoniker": "MyAgenda\\Account.xaml",
+              "ToolTip": "C:\\DatiAllievo\\Matteo\\GitHub\\Modulo322\\2_Applicativo\\Mateo\\MyAgenda\\Account.xaml",
+              "RelativeToolTip": "MyAgenda\\Account.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-05-22T13:56:00.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "HomePage.xaml",
-              "DocumentMoniker": "C:\\Users\\uzf668\\source\\repos\\Progetto\\Modulo322\\2_Applicativo\\Mateo\\MyAgenda\\HomePage.xaml",
+              "DocumentMoniker": "C:\\DatiAllievo\\Matteo\\GitHub\\Modulo322\\2_Applicativo\\Mateo\\MyAgenda\\HomePage.xaml",
               "RelativeDocumentMoniker": "MyAgenda\\HomePage.xaml",
-              "ToolTip": "C:\\Users\\uzf668\\source\\repos\\Progetto\\Modulo322\\2_Applicativo\\Mateo\\MyAgenda\\HomePage.xaml",
+              "ToolTip": "C:\\DatiAllievo\\Matteo\\GitHub\\Modulo322\\2_Applicativo\\Mateo\\MyAgenda\\HomePage.xaml",
               "RelativeToolTip": "MyAgenda\\HomePage.xaml",
               "ViewState": "AgIAAKUAAAAAAAAAAAAAACQAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
@@ -74,13 +76,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Scuola.xaml",
-              "DocumentMoniker": "C:\\Users\\uzf668\\source\\repos\\Progetto\\Modulo322\\2_Applicativo\\Mateo\\MyAgenda\\Scuola.xaml",
+              "DocumentMoniker": "C:\\DatiAllievo\\Matteo\\GitHub\\Modulo322\\2_Applicativo\\Mateo\\MyAgenda\\Scuola.xaml",
               "RelativeDocumentMoniker": "MyAgenda\\Scuola.xaml",
-              "ToolTip": "C:\\Users\\uzf668\\source\\repos\\Progetto\\Modulo322\\2_Applicativo\\Mateo\\MyAgenda\\Scuola.xaml",
+              "ToolTip": "C:\\DatiAllievo\\Matteo\\GitHub\\Modulo322\\2_Applicativo\\Mateo\\MyAgenda\\Scuola.xaml",
               "RelativeToolTip": "MyAgenda\\Scuola.xaml",
-              "ViewState": "AgIAAH8AAAAAAAAAAAAowIUAAABCAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAI4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-05-22T13:52:53.461Z",
               "EditorCaption": ""
