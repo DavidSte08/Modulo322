@@ -1,12 +1,16 @@
-namespace MyAgenda
+using MyAgenda.Services;
+
+namespace MyAgenda;
+
+public partial class App : Application
 {
-    public partial class App : Application
+    public App()
     {
-        public App()
-        {
-            InitializeComponent();
-            // Apre direttamente il Login avvolto in una NavigationPage
-            MainPage = new NavigationPage(new Login());
-        }
+        InitializeComponent();
+
+        // Applica le preferenze visive salvate (colori, font)
+        ThemeService.ApplicaTutto();
+
+        MainPage = new NavigationPage(new Login());
     }
 }

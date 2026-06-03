@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< Updated upstream
   "WorkspaceRootPath": "C:\\Users\\ska997\\source\\repos\\Modulo322\\2_Applicativo\\MyAgenda\\",
   "Documents": [
     {
@@ -68,6 +69,64 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|c:\\users\\ska997\\source\\repos\\modulo322\\2_applicativo\\myagenda\\myagenda\\register.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+=======
+  "WorkspaceRootPath": "C:\\Users\\uzf668\\source\\repos\\Progetto\\Modulo322\\2_Applicativo\\MyAgenda\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|c:\\users\\uzf668\\source\\repos\\progetto\\modulo322\\2_applicativo\\myagenda\\myagenda\\account.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|solutionrelative:myagenda\\account.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|c:\\users\\uzf668\\source\\repos\\progetto\\modulo322\\2_applicativo\\myagenda\\myagenda\\account.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|solutionrelative:myagenda\\account.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|c:\\users\\uzf668\\source\\repos\\progetto\\modulo322\\2_applicativo\\myagenda\\myagenda\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|solutionrelative:myagenda\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|c:\\users\\uzf668\\source\\repos\\progetto\\modulo322\\2_applicativo\\myagenda\\myagenda\\sessione.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|solutionrelative:myagenda\\sessione.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|c:\\users\\uzf668\\source\\repos\\progetto\\modulo322\\2_applicativo\\myagenda\\myagenda\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|solutionrelative:myagenda\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|c:\\users\\uzf668\\source\\repos\\progetto\\modulo322\\2_applicativo\\myagenda\\myagenda\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|solutionrelative:myagenda\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|c:\\users\\uzf668\\source\\repos\\progetto\\modulo322\\2_applicativo\\myagenda\\myagenda\\passwordrecupero.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|solutionrelative:myagenda\\passwordrecupero.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|c:\\users\\uzf668\\source\\repos\\progetto\\modulo322\\2_applicativo\\myagenda\\myagenda\\homepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|solutionrelative:myagenda\\homepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|c:\\users\\uzf668\\source\\repos\\progetto\\modulo322\\2_applicativo\\myagenda\\myagenda\\homepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|solutionrelative:myagenda\\homepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|c:\\users\\uzf668\\source\\repos\\progetto\\modulo322\\2_applicativo\\myagenda\\myagenda\\register.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|solutionrelative:myagenda\\register.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|c:\\users\\uzf668\\source\\repos\\progetto\\modulo322\\2_applicativo\\myagenda\\myagenda\\scuola.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|solutionrelative:myagenda\\scuola.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|c:\\users\\uzf668\\source\\repos\\progetto\\modulo322\\2_applicativo\\myagenda\\myagenda\\scuola.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|solutionrelative:myagenda\\scuola.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|c:\\users\\uzf668\\source\\repos\\progetto\\modulo322\\2_applicativo\\myagenda\\myagenda\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|solutionrelative:myagenda\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|c:\\users\\uzf668\\source\\repos\\progetto\\modulo322\\2_applicativo\\myagenda\\myagenda\\register.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+>>>>>>> Stashed changes
       "RelativeMoniker": "D:0:0:{B94BCBF8-332A-4A1E-88A5-C70ED957E529}|MyAgenda\\MyAgenda.csproj|solutionrelative:myagenda\\register.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -90,6 +149,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 2,
               "Title": "Attivita.xaml.cs",
               "DocumentMoniker": "C:\\Users\\ska997\\source\\repos\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\Attivita.xaml.cs",
@@ -97,6 +157,15 @@
               "ToolTip": "C:\\Users\\ska997\\source\\repos\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\Attivita.xaml.cs",
               "RelativeToolTip": "MyAgenda\\Attivita.xaml.cs",
               "ViewState": "AgIAAEcAAAAAAAAAAAAwwCEAAAAAAAAAAAAAAA==",
+=======
+              "DocumentIndex": 5,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\uzf668\\source\\repos\\Progetto\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\AuthService.cs",
+              "RelativeDocumentMoniker": "MyAgenda\\AuthService.cs",
+              "ToolTip": "C:\\Users\\uzf668\\source\\repos\\Progetto\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\AuthService.cs",
+              "RelativeToolTip": "MyAgenda\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+>>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-03T10:44:04.726Z",
               "EditorCaption": ""
@@ -170,24 +239,35 @@
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Account.xaml",
+<<<<<<< Updated upstream
               "DocumentMoniker": "C:\\Users\\ska997\\source\\repos\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\Account.xaml",
               "RelativeDocumentMoniker": "MyAgenda\\Account.xaml",
               "ToolTip": "C:\\Users\\ska997\\source\\repos\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\Account.xaml",
+=======
+              "DocumentMoniker": "C:\\Users\\uzf668\\source\\repos\\Progetto\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\Account.xaml",
+              "RelativeDocumentMoniker": "MyAgenda\\Account.xaml",
+              "ToolTip": "C:\\Users\\uzf668\\source\\repos\\Progetto\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\Account.xaml",
+>>>>>>> Stashed changes
               "RelativeToolTip": "MyAgenda\\Account.xaml",
               "ViewState": "AgIAAEQAAAAAAAAAAADwv3AAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-29T11:48:32.464Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-29T11:48:32.464Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "Account.xaml.cs",
+<<<<<<< Updated upstream
               "DocumentMoniker": "C:\\Users\\ska997\\source\\repos\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\Account.xaml.cs",
               "RelativeDocumentMoniker": "MyAgenda\\Account.xaml.cs",
               "ToolTip": "C:\\Users\\ska997\\source\\repos\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\Account.xaml.cs",
+=======
+              "DocumentMoniker": "C:\\Users\\uzf668\\source\\repos\\Progetto\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\Account.xaml.cs",
+              "RelativeDocumentMoniker": "MyAgenda\\Account.xaml.cs",
+              "ToolTip": "C:\\Users\\uzf668\\source\\repos\\Progetto\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\Account.xaml.cs",
+>>>>>>> Stashed changes
               "RelativeToolTip": "MyAgenda\\Account.xaml.cs",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAgwIgAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAgwJIAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-29T11:49:14.329Z",
               "EditorCaption": ""
@@ -196,9 +276,15 @@
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "Login.xaml.cs",
+<<<<<<< Updated upstream
               "DocumentMoniker": "C:\\Users\\ska997\\source\\repos\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\Login.xaml.cs",
               "RelativeDocumentMoniker": "MyAgenda\\Login.xaml.cs",
               "ToolTip": "C:\\Users\\ska997\\source\\repos\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\Login.xaml.cs",
+=======
+              "DocumentMoniker": "C:\\Users\\uzf668\\source\\repos\\Progetto\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\Login.xaml.cs",
+              "RelativeDocumentMoniker": "MyAgenda\\Login.xaml.cs",
+              "ToolTip": "C:\\Users\\uzf668\\source\\repos\\Progetto\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\Login.xaml.cs",
+>>>>>>> Stashed changes
               "RelativeToolTip": "MyAgenda\\Login.xaml.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAgwBoAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -209,9 +295,15 @@
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "Login.xaml",
+<<<<<<< Updated upstream
               "DocumentMoniker": "C:\\Users\\ska997\\source\\repos\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\Login.xaml",
               "RelativeDocumentMoniker": "MyAgenda\\Login.xaml",
               "ToolTip": "C:\\Users\\ska997\\source\\repos\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\Login.xaml",
+=======
+              "DocumentMoniker": "C:\\Users\\uzf668\\source\\repos\\Progetto\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\Login.xaml",
+              "RelativeDocumentMoniker": "MyAgenda\\Login.xaml",
+              "ToolTip": "C:\\Users\\uzf668\\source\\repos\\Progetto\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\Login.xaml",
+>>>>>>> Stashed changes
               "RelativeToolTip": "MyAgenda\\Login.xaml",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
@@ -222,9 +314,15 @@
               "$type": "Document",
               "DocumentIndex": 15,
               "Title": "MauiProgram.cs",
+<<<<<<< Updated upstream
               "DocumentMoniker": "C:\\Users\\ska997\\source\\repos\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\MauiProgram.cs",
               "RelativeDocumentMoniker": "MyAgenda\\MauiProgram.cs",
               "ToolTip": "C:\\Users\\ska997\\source\\repos\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\MauiProgram.cs",
+=======
+              "DocumentMoniker": "C:\\Users\\uzf668\\source\\repos\\Progetto\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "MyAgenda\\MauiProgram.cs",
+              "ToolTip": "C:\\Users\\uzf668\\source\\repos\\Progetto\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\MauiProgram.cs",
+>>>>>>> Stashed changes
               "RelativeToolTip": "MyAgenda\\MauiProgram.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -234,9 +332,15 @@
               "$type": "Document",
               "DocumentIndex": 11,
               "Title": "PasswordRecupero.xaml",
+<<<<<<< Updated upstream
               "DocumentMoniker": "C:\\Users\\ska997\\source\\repos\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\PasswordRecupero.xaml",
               "RelativeDocumentMoniker": "MyAgenda\\PasswordRecupero.xaml",
               "ToolTip": "C:\\Users\\ska997\\source\\repos\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\PasswordRecupero.xaml",
+=======
+              "DocumentMoniker": "C:\\Users\\uzf668\\source\\repos\\Progetto\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\PasswordRecupero.xaml",
+              "RelativeDocumentMoniker": "MyAgenda\\PasswordRecupero.xaml",
+              "ToolTip": "C:\\Users\\uzf668\\source\\repos\\Progetto\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\PasswordRecupero.xaml",
+>>>>>>> Stashed changes
               "RelativeToolTip": "MyAgenda\\PasswordRecupero.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
@@ -246,9 +350,15 @@
               "$type": "Document",
               "DocumentIndex": 16,
               "Title": "Register.xaml.cs",
+<<<<<<< Updated upstream
               "DocumentMoniker": "C:\\Users\\ska997\\source\\repos\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\Register.xaml.cs",
               "RelativeDocumentMoniker": "MyAgenda\\Register.xaml.cs",
               "ToolTip": "C:\\Users\\ska997\\source\\repos\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\Register.xaml.cs",
+=======
+              "DocumentMoniker": "C:\\Users\\uzf668\\source\\repos\\Progetto\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\Register.xaml.cs",
+              "RelativeDocumentMoniker": "MyAgenda\\Register.xaml.cs",
+              "ToolTip": "C:\\Users\\uzf668\\source\\repos\\Progetto\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\Register.xaml.cs",
+>>>>>>> Stashed changes
               "RelativeToolTip": "MyAgenda\\Register.xaml.cs",
               "ViewState": "AgIAADcAAAAAAAAAAAAQwEcAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -258,9 +368,15 @@
               "$type": "Document",
               "DocumentIndex": 12,
               "Title": "Register.xaml",
+<<<<<<< Updated upstream
               "DocumentMoniker": "C:\\Users\\ska997\\source\\repos\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\Register.xaml",
               "RelativeDocumentMoniker": "MyAgenda\\Register.xaml",
               "ToolTip": "C:\\Users\\ska997\\source\\repos\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\Register.xaml",
+=======
+              "DocumentMoniker": "C:\\Users\\uzf668\\source\\repos\\Progetto\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\Register.xaml",
+              "RelativeDocumentMoniker": "MyAgenda\\Register.xaml",
+              "ToolTip": "C:\\Users\\uzf668\\source\\repos\\Progetto\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\Register.xaml",
+>>>>>>> Stashed changes
               "RelativeToolTip": "MyAgenda\\Register.xaml",
               "ViewState": "AgIAAEUAAAAAAAAAAAAowFcAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
@@ -268,11 +384,31 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 10,
               "Title": "Sessione.cs",
               "DocumentMoniker": "C:\\Users\\ska997\\source\\repos\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\Sessione.cs",
               "RelativeDocumentMoniker": "MyAgenda\\Sessione.cs",
               "ToolTip": "C:\\Users\\ska997\\source\\repos\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\Sessione.cs",
+=======
+              "DocumentIndex": 8,
+              "Title": "HomePage.xaml",
+              "DocumentMoniker": "C:\\Users\\uzf668\\source\\repos\\Progetto\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\HomePage.xaml",
+              "RelativeDocumentMoniker": "MyAgenda\\HomePage.xaml",
+              "ToolTip": "C:\\Users\\uzf668\\source\\repos\\Progetto\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\HomePage.xaml",
+              "RelativeToolTip": "MyAgenda\\HomePage.xaml",
+              "ViewState": "AgIAAKIAAAAAAAAAAAAowMsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-24T11:50:08.812Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Sessione.cs",
+              "DocumentMoniker": "C:\\Users\\uzf668\\source\\repos\\Progetto\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\Sessione.cs",
+              "RelativeDocumentMoniker": "MyAgenda\\Sessione.cs",
+              "ToolTip": "C:\\Users\\uzf668\\source\\repos\\Progetto\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\Sessione.cs",
+>>>>>>> Stashed changes
               "RelativeToolTip": "MyAgenda\\Sessione.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -282,9 +418,15 @@
               "$type": "Document",
               "DocumentIndex": 14,
               "Title": "Scuola.xaml",
+<<<<<<< Updated upstream
               "DocumentMoniker": "C:\\Users\\ska997\\source\\repos\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\Scuola.xaml",
               "RelativeDocumentMoniker": "MyAgenda\\Scuola.xaml",
               "ToolTip": "C:\\Users\\ska997\\source\\repos\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\Scuola.xaml",
+=======
+              "DocumentMoniker": "C:\\Users\\uzf668\\source\\repos\\Progetto\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\Scuola.xaml",
+              "RelativeDocumentMoniker": "MyAgenda\\Scuola.xaml",
+              "ToolTip": "C:\\Users\\uzf668\\source\\repos\\Progetto\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\Scuola.xaml",
+>>>>>>> Stashed changes
               "RelativeToolTip": "MyAgenda\\Scuola.xaml",
               "ViewState": "AgIAAH8AAAAAAAAAAAAowIoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
@@ -295,13 +437,34 @@
               "$type": "Document",
               "DocumentIndex": 13,
               "Title": "Scuola.xaml.cs",
+<<<<<<< Updated upstream
               "DocumentMoniker": "C:\\Users\\ska997\\source\\repos\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\Scuola.xaml.cs",
               "RelativeDocumentMoniker": "MyAgenda\\Scuola.xaml.cs",
               "ToolTip": "C:\\Users\\ska997\\source\\repos\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\Scuola.xaml.cs",
+=======
+              "DocumentMoniker": "C:\\Users\\uzf668\\source\\repos\\Progetto\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\Scuola.xaml.cs",
+              "RelativeDocumentMoniker": "MyAgenda\\Scuola.xaml.cs",
+              "ToolTip": "C:\\Users\\uzf668\\source\\repos\\Progetto\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\Scuola.xaml.cs",
+>>>>>>> Stashed changes
               "RelativeToolTip": "MyAgenda\\Scuola.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-24T14:05:51.346Z"
+<<<<<<< Updated upstream
+=======
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HomePage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\uzf668\\source\\repos\\Progetto\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\HomePage.xaml.cs",
+              "RelativeDocumentMoniker": "MyAgenda\\HomePage.xaml.cs",
+              "ToolTip": "C:\\Users\\uzf668\\source\\repos\\Progetto\\Modulo322\\2_Applicativo\\MyAgenda\\MyAgenda\\HomePage.xaml.cs",
+              "RelativeToolTip": "MyAgenda\\HomePage.xaml.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAmwCcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T11:50:16.882Z"
+>>>>>>> Stashed changes
             }
           ]
         }

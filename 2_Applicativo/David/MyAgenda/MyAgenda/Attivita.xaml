@@ -2,13 +2,96 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyAgenda.Attivita"
-             Title="Attivita">
-    <VerticalStackLayout>
-        
-        <Label Text="Attivita" />
+             Title="Attività">
 
-        <Button Text="HomePage"
-                Clicked="OnHomeClicked" />
+    <Grid ColumnDefinitions="240,*">
 
-    </VerticalStackLayout>
+        <!-- ── PANNELLO SINISTRA ── -->
+        <VerticalStackLayout Padding="16" Spacing="14"
+                             BackgroundColor="{StaticResource Surface}">
+
+            <!-- Torna indietro + titolo -->
+            <Grid ColumnDefinitions="Auto,*">
+                <Button Text="←" Style="{StaticResource IconButton}"
+                        BackgroundColor="{StaticResource Gray100}"
+                        TextColor="{StaticResource Gray700}"
+                        Clicked="OnHomeClicked"/>
+                <Label Grid.Column="1" Text="Attività"
+                       Style="{StaticResource CardTitle}"
+                       VerticalOptions="Center" Margin="10,0,0,0"/>
+            </Grid>
+
+            <!-- Aggiungi evento -->
+            <Button Text="＋  Aggiungi evento"
+                    Style="{StaticResource PrimaryButton}"
+                    Clicked="OnAddEventoClicked"/>
+
+            <!-- Selettore data -->
+            <Border Style="{StaticResource SectionCard}">
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="DATA" Style="{StaticResource SectionLabel}"/>
+                    <DatePicker x:Name="calendarPicker"
+                                DateSelected="OnDateSelected"/>
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- Quick Add -->
+            <Border Style="{StaticResource SectionCard}">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="QUICK ADD" Style="{StaticResource SectionLabel}"/>
+
+                    <Label Text="Nome" Style="{StaticResource FieldLabel}"/>
+                    <Picker x:Name="quickNomePicker" Title="Seleziona nome"/>
+
+                    <Label Text="Tipo" Style="{StaticResource FieldLabel}"/>
+                    <Picker x:Name="quickTipoPicker" Title="Seleziona tipo"/>
+
+                    <Label Text="Data" Style="{StaticResource FieldLabel}"/>
+                    <DatePicker x:Name="quickDatePicker"/>
+
+                    <Label Text="Ora" Style="{StaticResource FieldLabel}"/>
+                    <TimePicker x:Name="quickTimePicker"/>
+
+                    <Button Text="Aggiungi veloce"
+                            Style="{StaticResource SmallActionButton}"
+                            BackgroundColor="{StaticResource Primary}"
+                            TextColor="White"
+                            HeightRequest="40"
+                            Clicked="OnQuickAddClicked"/>
+                </VerticalStackLayout>
+            </Border>
+
+        </VerticalStackLayout>
+
+        <!-- ── CALENDARIO SETTIMANALE ── -->
+        <Grid Grid.Column="1" RowDefinitions="48,*"
+              BackgroundColor="{StaticResource Background}">
+
+            <!-- Header giorni fisso -->
+            <ScrollView x:Name="HeaderScroll"
+                        Grid.Row="0"
+                        Orientation="Horizontal"
+                        HorizontalScrollBarVisibility="Never"
+                        BackgroundColor="{StaticResource Surface}">
+                <Grid x:Name="HeaderGrid"
+                      HeightRequest="48"
+                      ColumnSpacing="1"
+                      BackgroundColor="{StaticResource BorderLight}"/>
+            </ScrollView>
+
+            <!-- Corpo calendario -->
+            <ScrollView Grid.Row="1" Orientation="Vertical">
+                <ScrollView x:Name="BodyScroll"
+                            Orientation="Horizontal"
+                            Scrolled="BodyScroll_Scrolled">
+                    <Grid x:Name="CalendarioGrid"
+                          RowSpacing="1"
+                          ColumnSpacing="1"
+                          BackgroundColor="{StaticResource BorderLight}"/>
+                </ScrollView>
+            </ScrollView>
+
+        </Grid>
+
+    </Grid>
 </ContentPage>

@@ -3,12 +3,211 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyAgenda.Account"
              Title="Account">
-    <VerticalStackLayout>
-        
-        <Label Text="Account" />
 
-        <Button Text="HomePage"
-                Clicked="OnHomeClicked" />
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
 
-    </VerticalStackLayout>
+            <!-- ══════════════════════════════════
+                 1. DETTAGLI UTENTE
+                 ══════════════════════════════════ -->
+            <Label Text="Dettagli Utente" FontSize="16" FontAttributes="Bold" TextColor="#555555" />
+
+            <Border StrokeShape="RoundRectangle 10" BackgroundColor="#E0E0E0"
+                    StrokeThickness="0" Padding="15">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnDettagliCardTapped" />
+                </Border.GestureRecognizers>
+
+                <VerticalStackLayout Spacing="12">
+
+                    <!-- Header riga con bottone salva -->
+                    <Grid ColumnDefinitions="Auto,*,Auto">
+                        <Grid VerticalOptions="Center">
+                            <Ellipse WidthRequest="52" HeightRequest="52" Fill="#888888"/>
+                            <Image x:Name="ImgEditIcon" Source="edit_small_icon.png"
+                                   WidthRequest="16" HeightRequest="16"
+                                   HorizontalOptions="End" VerticalOptions="Start"
+                                   IsVisible="False"/>
+                        </Grid>
+
+                        <Label Grid.Column="1"
+                               x:Name="LblNomeUtente"
+                               Text="Utente"
+                               FontSize="18" FontAttributes="Bold"
+                               TextColor="#111827"
+                               VerticalOptions="Center"
+                               Margin="12,0,0,0"/>
+
+                        <Button Grid.Column="2"
+                                x:Name="BtnApplicaDettagli"
+                                Text="Salva"
+                                FontSize="12" HeightRequest="34"
+                                BackgroundColor="#2563EB" TextColor="White"
+                                CornerRadius="10" IsVisible="False"
+                                Clicked="OnApplicaDettagliClicked"/>
+                    </Grid>
+
+                    <!-- Separatore -->
+                    <BoxView HeightRequest="1" BackgroundColor="#D1D5DB"/>
+
+                    <!-- Campo username -->
+                    <VerticalStackLayout Spacing="4">
+                        <Label Text="Nome Utente" FontSize="12" FontAttributes="Bold"
+                               TextColor="#6B7280"/>
+                        <Label x:Name="LblNomeUtenteVal"
+                               FontSize="15" TextColor="#111827" IsVisible="True"/>
+                        <Border x:Name="BorderNomeUtente"
+                                BackgroundColor="White" StrokeShape="RoundRectangle 8"
+                                StrokeThickness="1" Stroke="#E5E7EB"
+                                HeightRequest="44" Padding="0" IsVisible="False">
+                            <Entry x:Name="TxtNomeUtente" Margin="10,0"/>
+                        </Border>
+                    </VerticalStackLayout>
+
+                    <!-- Campo vecchia password -->
+                    <VerticalStackLayout Spacing="4">
+                        <Label Text="Password" FontSize="12" FontAttributes="Bold"
+                               TextColor="#6B7280"/>
+                        <Label x:Name="LblPassword" Text="••••••••"
+                               FontSize="15" TextColor="#111827" IsVisible="True"/>
+                        <Border x:Name="BorderPasswordOld"
+                                BackgroundColor="White" StrokeShape="RoundRectangle 8"
+                                StrokeThickness="1" Stroke="#E5E7EB"
+                                HeightRequest="44" Padding="0" IsVisible="False">
+                            <Entry x:Name="TxtPasswordOld"
+                                   Placeholder="Vecchia password"
+                                   IsPassword="True" Margin="10,0"/>
+                        </Border>
+                    </VerticalStackLayout>
+
+                    <!-- Campo nuova password -->
+                    <VerticalStackLayout x:Name="NuovaPasswordLayout"
+                                         Spacing="4" IsVisible="False">
+                        <Label Text="Nuova Password" FontSize="12" FontAttributes="Bold"
+                               TextColor="#6B7280"/>
+                        <Border x:Name="BorderPasswordNew"
+                                BackgroundColor="White" StrokeShape="RoundRectangle 8"
+                                StrokeThickness="1" Stroke="#E5E7EB"
+                                HeightRequest="44" Padding="0">
+                            <Entry x:Name="TxtPassword"
+                                   Placeholder="Nuova password"
+                                   IsPassword="True" Margin="10,0"/>
+                        </Border>
+                        <!-- Indicatore forza password -->
+                        <Label x:Name="LblForzaPassword"
+                               FontSize="11" TextColor="#6B7280"/>
+                    </VerticalStackLayout>
+
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- ══════════════════════════════════
+                 2. PERSONALIZZAZIONE
+                 ══════════════════════════════════ -->
+            <Label Text="Personalizzazione" FontSize="16" FontAttributes="Bold" TextColor="#555555" />
+
+            <Border StrokeShape="RoundRectangle 10" BackgroundColor="#E0E0E0"
+                    StrokeThickness="0" Padding="15">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnPersonalizzazioneCardTapped" />
+                </Border.GestureRecognizers>
+
+                <VerticalStackLayout Spacing="14">
+
+                    <Grid ColumnDefinitions="*,Auto">
+                        <Label Text="Aspetto" FontAttributes="Bold" FontSize="15"
+                               VerticalOptions="Center"/>
+                        <Button x:Name="BtnApplicaPersonalizzazione"
+                                Grid.Column="1"
+                                Text="Salva"
+                                FontSize="12" HeightRequest="34"
+                                BackgroundColor="#2563EB" TextColor="White"
+                                CornerRadius="10" IsVisible="False"
+                                Clicked="OnApplicaPersonalizzazioneClicked"/>
+                    </Grid>
+
+                    <BoxView HeightRequest="1" BackgroundColor="#D1D5DB"/>
+
+                    <!-- Stile colori -->
+                    <Grid ColumnDefinitions="*,Auto">
+                        <VerticalStackLayout VerticalOptions="Center">
+                            <Label Text="Tema colori" FontAttributes="Bold" FontSize="14"/>
+                            <Label Text="Cambia la palette dell'app"
+                                   FontSize="12" TextColor="#6B7280"/>
+                        </VerticalStackLayout>
+                        <Label x:Name="LblStileColori" Grid.Column="1"
+                               Text="Predefinito" FontSize="13"
+                               TextColor="#6B7280" VerticalOptions="Center"
+                               IsVisible="True"/>
+                        <Picker x:Name="PkrStileColori" Grid.Column="1"
+                                WidthRequest="150" IsVisible="False">
+                            <Picker.Items>
+                                <x:String>Predefinito</x:String>
+                                <x:String>Oceano</x:String>
+                                <x:String>Foresta</x:String>
+                                <x:String>Tramonto</x:String>
+                            </Picker.Items>
+                        </Picker>
+                    </Grid>
+
+                    <BoxView HeightRequest="1" BackgroundColor="#D1D5DB"/>
+
+                    <!-- Dimensione testo -->
+                    <Grid ColumnDefinitions="*,Auto">
+                        <VerticalStackLayout VerticalOptions="Center">
+                            <Label Text="Dimensione testo" FontAttributes="Bold" FontSize="14"/>
+                            <Label Text="Regola la grandezza dei caratteri"
+                                   FontSize="12" TextColor="#6B7280"/>
+                        </VerticalStackLayout>
+                        <Label x:Name="LblStileFont" Grid.Column="1"
+                               Text="Normale" FontSize="13"
+                               TextColor="#6B7280" VerticalOptions="Center"
+                               IsVisible="True"/>
+                        <Picker x:Name="PkrStileFont" Grid.Column="1"
+                                WidthRequest="150" IsVisible="False">
+                            <Picker.Items>
+                                <x:String>Piccolo</x:String>
+                                <x:String>Normale</x:String>
+                                <x:String>Grande</x:String>
+                            </Picker.Items>
+                        </Picker>
+                    </Grid>
+
+                    <BoxView HeightRequest="1" BackgroundColor="#D1D5DB"/>
+
+                    <!-- Suono notifiche -->
+                    <Grid ColumnDefinitions="*,Auto">
+                        <VerticalStackLayout VerticalOptions="Center">
+                            <Label Text="Suono notifiche" FontAttributes="Bold" FontSize="14"/>
+                            <Label Text="Audio degli avvisi"
+                                   FontSize="12" TextColor="#6B7280"/>
+                        </VerticalStackLayout>
+                        <Label x:Name="LblSuonoNotifiche" Grid.Column="1"
+                               Text="Predefinito" FontSize="13"
+                               TextColor="#6B7280" VerticalOptions="Center"
+                               IsVisible="True"/>
+                        <Picker x:Name="PkrSuonoNotifiche" Grid.Column="1"
+                                WidthRequest="150" IsVisible="False">
+                            <Picker.Items>
+                                <x:String>Predefinito</x:String>
+                                <x:String>Discreto</x:String>
+                                <x:String>Silenzioso</x:String>
+                            </Picker.Items>
+                        </Picker>
+                    </Grid>
+
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- LOGOUT -->
+            <Button Text="Esci dall'account"
+                    BackgroundColor="#DC2626"
+                    TextColor="White"
+                    CornerRadius="10"
+                    HeightRequest="48"
+                    Margin="0,8,0,24"
+                    Clicked="OnLogoutClicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

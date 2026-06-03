@@ -1,3 +1,5 @@
+using MyAgenda.Services;
+
 namespace MyAgenda;
 
 public partial class Register : ContentPage
@@ -14,9 +16,9 @@ public partial class Register : ContentPage
         string confirm = ConfirmPasswordEntry.Text ?? "";
 
         // Validazione username
-        if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
+        if (string.IsNullOrEmpty(username))
         {
-            await DisplayAlert("Errore", "Compila tutti i campi.", "OK");
+            await DisplayAlert("Errore", "Inserisci un nome utente.", "OK");
             return;
         }
 
@@ -26,54 +28,39 @@ public partial class Register : ContentPage
             return;
         }
 
-        // Validazione password
-        string? passwordError = ValidatePassword(password);
-        if (passwordError != null)
+        // Validazione password (centralizzata in PasswordValidator)
+        string? errore = PasswordValidator.Validate(password);
+        if (errore != null)
         {
-            await DisplayAlert("Password non valida", passwordError, "OK");
+            await DisplayAlert("Password non valida", errore, "OK");
             return;
         }
 
-        // Conferma password
         if (password != confirm)
         {
             await DisplayAlert("Errore", "Le password non corrispondono.", "OK");
             return;
         }
 
-        bool success = await AuthService.RegisterAsync(username, password);
+        RegisterButton.IsEnabled = false;
 
-        if (success)
+        try
         {
-            await DisplayAlert("Successo", "Account creato! Ora puoi accedere.", "OK");
-            await Navigation.PopAsync();
+            bool success = await AuthService.RegisterAsync(username, password);
+
+            if (success)
+            {
+                await DisplayAlert("Successo", "Account creato! Ora puoi accedere.", "OK");
+                await Navigation.PopAsync();
+            }
+            else
+            {
+                await DisplayAlert("Errore", "Username già in uso. Scegline un altro.", "OK");
+            }
         }
-        else
+        finally
         {
-            await DisplayAlert("Errore", "Username già in uso. Scegline un altro.", "OK");
+            RegisterButton.IsEnabled = true;
         }
-    }
-
-    private string? ValidatePassword(string password)
-    {
-        if (password.Length < 8)
-            return "La password deve avere almeno 8 caratteri.";
-
-        if (password.Length > 64)
-            return "La password non può superare i 64 caratteri.";
-
-        if (!password.Any(char.IsUpper))
-            return "La password deve contenere almeno una lettera maiuscola.";
-
-        if (!password.Any(char.IsLower))
-            return "La password deve contenere almeno una lettera minuscola.";
-
-        if (!password.Any(char.IsDigit))
-            return "La password deve contenere almeno un numero.";
-
-        if (!password.Any(c => "!@#$%^&*()_+-=[]{}|;':\",./<>?".Contains(c)))
-            return "La password deve contenere almeno un carattere speciale (es. !, @, #, $).";
-
-        return null; // password valida
     }
 }

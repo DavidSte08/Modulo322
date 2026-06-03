@@ -1,65 +1,214 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyAgenda.HomePage">
 
-    <Grid ColumnDefinitions="*,*,*,*"
-          RowDefinitions="*,*,*,*"
-      Padding="20"
-      RowSpacing="15">
+    <Grid ColumnDefinitions="*,*,*,300"
+          RowDefinitions="Auto,Auto,*,Auto,*"
+          Padding="20"
+          RowSpacing="14"
+          ColumnSpacing="14">
 
-        <!-- TITOLO -->
-        <Border Grid.Row="0"
-            Grid.Column="0"
-            Grid.ColumnSpan="4"
-            Stroke="Gray"
-            StrokeThickness="1"
-            Padding="15"
-            BackgroundColor="LightGray">
+        <!-- ── HEADER ── -->
+        <Border Grid.Row="0" Grid.ColumnSpan="4"
+                Style="{StaticResource Card}">
+            <Grid ColumnDefinitions="Auto,*,Auto">
 
-            <Label Text="Benvenuto in MyAgenda!"
-               FontSize="32"
-               HorizontalOptions="Center"/>
+                <Border StrokeShape="RoundRectangle 22"
+                        StrokeThickness="0"
+                        BackgroundColor="{StaticResource Primary}"
+                        WidthRequest="44" HeightRequest="44"
+                        VerticalOptions="Center">
+                    <Label Text="👤" FontSize="22"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnAccountClicked"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                </Border>
+
+                <VerticalStackLayout Grid.Column="1" Margin="14,0,0,0" VerticalOptions="Center">
+                    <Label x:Name="WelcomeLabel"
+                           Text="Benvenuto in MyAgenda"
+                           Style="{StaticResource CardTitle}"
+                           FontSize="22"/>
+                    <Label Text="Gestisci scuola, impegni e attività"
+                           Style="{StaticResource SubtitleLabel}"
+                           FontSize="13"/>
+                </VerticalStackLayout>
+
+                <Label Grid.Column="2" x:Name="DataOggiLabel"
+                       VerticalOptions="Center"
+                       FontSize="13"
+                       TextColor="{StaticResource TextSecondary}"/>
+            </Grid>
         </Border>
 
-        <!-- ACCOUNT -->
-        <Border Grid.Row="1"
-            Grid.Column="0"
-            Grid.ColumnSpan="3"
-            Stroke="Gray"
-            StrokeThickness="1"
-            Padding="15">
-
-            <Button Text="Vai all'account"
-                Clicked="OnAccountClicked"
-                    Grid.Row="1"
-                    Grid.Column="2"/>
+        <!-- ── ATTIVITÀ TITLE ── -->
+        <Border Grid.Row="1" Grid.ColumnSpan="3"
+                Style="{StaticResource SectionHeader}"
+                BackgroundColor="{StaticResource Primary}">
+            <Label Text="📅  Prossime attività"
+                   FontSize="16" FontAttributes="Bold"
+                   TextColor="White"
+                   FontFamily="OpenSansSemibold"/>
         </Border>
 
-        <!-- ATTIVITÀ -->
-        <Border Grid.Row="2"
-            Grid.Column="0"
-            Grid.ColumnSpan="3"
-            Stroke="Gray"
-            StrokeThickness="1"
-            Padding="15">
+        <!-- ── ATTIVITÀ CARD ── -->
+        <Border Grid.Row="2" Grid.ColumnSpan="3"
+                Style="{StaticResource Card}">
+            <Grid ColumnDefinitions="*,*,*,Auto" ColumnSpacing="12">
 
-            <Button Text="Vai alle attività"
-                Clicked="OnAttivitaClicked"/>
+                <!-- Evento 1 -->
+                <Border Grid.Column="0"
+                        BackgroundColor="{StaticResource PrimaryLight}"
+                        StrokeShape="RoundRectangle 16" StrokeThickness="0" Padding="14">
+                    <VerticalStackLayout Spacing="6" VerticalOptions="Center">
+                        <Label Text="PROSSIMO" FontSize="10" FontAttributes="Bold"
+                               TextColor="{StaticResource Primary}" CharacterSpacing="1"
+                               FontFamily="OpenSansSemibold"/>
+                        <Label x:Name="Evento1Nome" Text="—"
+                               Style="{StaticResource CardTitle}" FontSize="16"/>
+                        <Label x:Name="Evento1Data" FontSize="12"
+                               TextColor="{StaticResource TextSecondary}"/>
+                    </VerticalStackLayout>
+                </Border>
+
+                <!-- Evento 2 -->
+                <Border Grid.Column="1"
+                        BackgroundColor="{StaticResource AccentLight}"
+                        StrokeShape="RoundRectangle 16" StrokeThickness="0" Padding="14">
+                    <VerticalStackLayout Spacing="6" VerticalOptions="Center">
+                        <Label Text="SECONDO" FontSize="10" FontAttributes="Bold"
+                               TextColor="{StaticResource Accent}" CharacterSpacing="1"
+                               FontFamily="OpenSansSemibold"/>
+                        <Label x:Name="Evento2Nome" Text="—"
+                               Style="{StaticResource CardTitle}" FontSize="16"/>
+                        <Label x:Name="Evento2Data" FontSize="12"
+                               TextColor="{StaticResource TextSecondary}"/>
+                    </VerticalStackLayout>
+                </Border>
+
+                <!-- Evento 3 -->
+                <Border Grid.Column="2"
+                        BackgroundColor="{StaticResource WarningLight}"
+                        StrokeShape="RoundRectangle 16" StrokeThickness="0" Padding="14">
+                    <VerticalStackLayout Spacing="6" VerticalOptions="Center">
+                        <Label Text="TERZO" FontSize="10" FontAttributes="Bold"
+                               TextColor="{StaticResource Warning}" CharacterSpacing="1"
+                               FontFamily="OpenSansSemibold"/>
+                        <Label x:Name="Evento3Nome" Text="—"
+                               Style="{StaticResource CardTitle}" FontSize="16"/>
+                        <Label x:Name="Evento3Data" FontSize="12"
+                               TextColor="{StaticResource TextSecondary}"/>
+                    </VerticalStackLayout>
+                </Border>
+
+                <!-- Bottone → -->
+                <Button Grid.Column="3" Text="→"
+                        Style="{StaticResource IconButton}"
+                        VerticalOptions="Center"
+                        Clicked="OnAttivitaClicked"/>
+            </Grid>
         </Border>
 
-        <!-- MATERIE -->
-        <Border Grid.Row="3"
-            Grid.Column="0"
-            Grid.ColumnSpan="3"
-            Stroke="Gray"
-            StrokeThickness="1"
-            Padding="15">
+        <!-- ── MATERIE TITLE ── -->
+        <Border Grid.Row="3" Grid.ColumnSpan="3"
+                Style="{StaticResource SectionHeader}"
+                BackgroundColor="{StaticResource Secondary}">
+            <Label Text="📚  Migliori materie"
+                   FontSize="16" FontAttributes="Bold"
+                   TextColor="White"
+                   FontFamily="OpenSansSemibold"/>
+        </Border>
 
-            <Button Text="Vai alle materie"
-                Clicked="OnMaterieClicked"/>
+        <!-- ── MATERIE CARD ── -->
+        <Border Grid.Row="4" Grid.ColumnSpan="3"
+                Style="{StaticResource Card}">
+            <Grid ColumnDefinitions="*,*,*,Auto" ColumnSpacing="12">
+
+                <!-- Top 1 -->
+                <Border Grid.Column="0"
+                        BackgroundColor="{StaticResource WarningLight}"
+                        StrokeShape="RoundRectangle 16" StrokeThickness="0" Padding="14">
+                    <VerticalStackLayout Spacing="8" VerticalOptions="Center">
+                        <Label Text="🥇" FontSize="32" HorizontalOptions="Center"/>
+                        <Label x:Name="top1Label" Text="—"
+                               HorizontalOptions="Center"
+                               HorizontalTextAlignment="Center"
+                               FontAttributes="Bold" FontSize="14"
+                               TextColor="{StaticResource TextPrimary}"/>
+                    </VerticalStackLayout>
+                </Border>
+
+                <!-- Top 2 -->
+                <Border Grid.Column="1"
+                        BackgroundColor="{StaticResource Gray100}"
+                        StrokeShape="RoundRectangle 16" StrokeThickness="0" Padding="14">
+                    <VerticalStackLayout Spacing="8" VerticalOptions="Center">
+                        <Label Text="🥈" FontSize="32" HorizontalOptions="Center"/>
+                        <Label x:Name="top2Label" Text="—"
+                               HorizontalOptions="Center"
+                               HorizontalTextAlignment="Center"
+                               FontAttributes="Bold" FontSize="14"
+                               TextColor="{StaticResource TextPrimary}"/>
+                    </VerticalStackLayout>
+                </Border>
+
+                <!-- Top 3 -->
+                <Border Grid.Column="2"
+                        BackgroundColor="#FDE8D8"
+                        StrokeShape="RoundRectangle 16" StrokeThickness="0" Padding="14">
+                    <VerticalStackLayout Spacing="8" VerticalOptions="Center">
+                        <Label Text="🥉" FontSize="32" HorizontalOptions="Center"/>
+                        <Label x:Name="top3Label" Text="—"
+                               HorizontalOptions="Center"
+                               HorizontalTextAlignment="Center"
+                               FontAttributes="Bold" FontSize="14"
+                               TextColor="{StaticResource TextPrimary}"/>
+                    </VerticalStackLayout>
+                </Border>
+
+                <!-- Bottone → -->
+                <Button Grid.Column="3" Text="→"
+                        Style="{StaticResource IconButton}"
+                        VerticalOptions="Center"
+                        Clicked="OnMaterieClicked"/>
+            </Grid>
+        </Border>
+
+        <!-- ── CALENDARIO (colonna destra) ── -->
+        <Border Grid.Row="1" Grid.RowSpan="4" Grid.Column="3"
+                Style="{StaticResource Card}">
+            <VerticalStackLayout Spacing="14">
+
+                <Label Text="🗓  Calendario"
+                       Style="{StaticResource CardTitle}"
+                       HorizontalOptions="Center"/>
+
+                <DatePicker x:Name="calendarPicker"
+                            DateSelected="OnDateSelected"
+                            HorizontalOptions="Center"/>
+
+                <Border BackgroundColor="{StaticResource Gray100}"
+                        StrokeThickness="0"
+                        StrokeShape="RoundRectangle 12"
+                        Padding="12">
+                    <Label x:Name="selectedDateLabel"
+                           Text="Seleziona una data"
+                           HorizontalOptions="Center"
+                           FontAttributes="Bold"
+                           FontSize="13"
+                           TextColor="{StaticResource TextSecondary}"/>
+                </Border>
+
+                <ScrollView>
+                    <VerticalStackLayout x:Name="EventiGiornoLayout" Spacing="10"/>
+                </ScrollView>
+
+            </VerticalStackLayout>
         </Border>
 
     </Grid>
-
 </ContentPage>

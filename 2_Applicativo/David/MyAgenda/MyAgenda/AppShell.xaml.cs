@@ -1,15 +1,13 @@
-namespace MyAgenda
-{
-    public partial class AppShell : Shell
-    {
-        public AppShell()
-        {
-            InitializeComponent();
+namespace MyAgenda;
 
-            Routing.RegisterRoute("Account", typeof(Account));
-            Routing.RegisterRoute("HomePage", typeof(HomePage));
-            Routing.RegisterRoute("Attivita", typeof(Attivita));
-            Routing.RegisterRoute("Scuola", typeof(Scuola));
-        }
+public partial class AppShell : Shell
+{
+    public AppShell()
+    {
+        InitializeComponent();
+
+        Routing.RegisterRoute(nameof(Account), typeof(Account));
+        Routing.RegisterRoute(nameof(Attivita), typeof(Attivita));
+        Routing.RegisterRoute(nameof(Scuola), typeof(Scuola));
     }
 }
