@@ -2,91 +2,82 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyAgenda.Register"
-             BackgroundColor="#F2F2F2"
              Title="Registrati">
 
     <ScrollView>
-        <VerticalStackLayout Padding="24" Spacing="32" VerticalOptions="Center">
+        <VerticalStackLayout Padding="28" Spacing="0" VerticalOptions="Center">
 
-            <Label Text="Registrati"
-                   FontSize="28"
-                   FontAttributes="Bold"
-                   TextColor="#1A1A1A" />
+            <VerticalStackLayout Spacing="6" Margin="0,0,0,32">
+                <Label Text="Crea account" Style="{StaticResource TitleLabel}"/>
+                <Label Text="Inizia a organizzare la tua agenda"
+                       Style="{StaticResource SubtitleLabel}"/>
+            </VerticalStackLayout>
 
-            <Frame BackgroundColor="White"
-                   CornerRadius="32"
-                   Padding="32"
-                   HasShadow="True">
-                <VerticalStackLayout Spacing="16">
+            <Border Style="{StaticResource CardLarge}">
+                <VerticalStackLayout Spacing="18">
 
-                    <!-- Nome Utente -->
-                    <VerticalStackLayout Spacing="4">
-                        <Label Text="Nome Utente" FontSize="13" TextColor="#555" />
-                        <Frame Padding="0" CornerRadius="8" HasShadow="False"
-                               BorderColor="#E0E0E0" HeightRequest="44">
+                    <Label Text="DATI ACCOUNT" Style="{StaticResource SectionLabel}"/>
+
+                    <!-- Username -->
+                    <VerticalStackLayout Spacing="6">
+                        <Label Text="Nome Utente" Style="{StaticResource FieldLabel}"/>
+                        <Border Style="{StaticResource InputBorder}">
                             <Entry x:Name="UsernameEntry"
                                    Placeholder="Minimo 3 caratteri"
-                                   PlaceholderColor="#BDBDBD"
-                                   BackgroundColor="Transparent"
-                                   Margin="8,0" />
-                        </Frame>
+                                   ReturnType="Next"/>
+                        </Border>
                     </VerticalStackLayout>
 
                     <!-- Password -->
-                    <VerticalStackLayout Spacing="4">
-                        <Label Text="Password" FontSize="13" TextColor="#555" />
-                        <Frame Padding="0" CornerRadius="8" HasShadow="False"
-                               BorderColor="#E0E0E0" HeightRequest="44">
+                    <VerticalStackLayout Spacing="6">
+                        <Label Text="Password" Style="{StaticResource FieldLabel}"/>
+                        <Border Style="{StaticResource InputBorder}">
                             <Entry x:Name="PasswordEntry"
                                    Placeholder="••••••••"
-                                   PlaceholderColor="#BDBDBD"
                                    IsPassword="True"
-                                   BackgroundColor="Transparent"
-                                   Margin="8,0" />
-                        </Frame>
-
-                        <!-- Requisiti password -->
-                        <Frame BackgroundColor="#F8F8F8"
-                               CornerRadius="8"
-                               Padding="12"
-                               HasShadow="False"
-                               BorderColor="#E0E0E0">
-                            <VerticalStackLayout Spacing="4">
-                                <Label Text="La password deve contenere:" FontSize="11" TextColor="#888" />
-                                <Label Text="✓  Almeno 8 caratteri" FontSize="11" TextColor="#888" />
-                                <Label Text="✓  Una lettera maiuscola (A-Z)" FontSize="11" TextColor="#888" />
-                                <Label Text="✓  Una lettera minuscola (a-z)" FontSize="11" TextColor="#888" />
-                                <Label Text="✓  Un numero (0-9)" FontSize="11" TextColor="#888" />
-                                <Label Text="✓  Un carattere speciale (!@#$...)" FontSize="11" TextColor="#888" />
-                            </VerticalStackLayout>
-                        </Frame>
+                                   ReturnType="Next"/>
+                        </Border>
                     </VerticalStackLayout>
 
-                    <!-- Conferma Password -->
-                    <VerticalStackLayout Spacing="4">
-                        <Label Text="Conferma Password" FontSize="13" TextColor="#555" />
-                        <Frame Padding="0" CornerRadius="8" HasShadow="False"
-                               BorderColor="#E0E0E0" HeightRequest="44">
+                    <!-- Conferma password -->
+                    <VerticalStackLayout Spacing="6">
+                        <Label Text="Conferma Password" Style="{StaticResource FieldLabel}"/>
+                        <Border Style="{StaticResource InputBorder}">
                             <Entry x:Name="ConfirmPasswordEntry"
                                    Placeholder="••••••••"
-                                   PlaceholderColor="#BDBDBD"
                                    IsPassword="True"
-                                   BackgroundColor="Transparent"
-                                   Margin="8,0" />
-                        </Frame>
+                                   ReturnType="Done"/>
+                        </Border>
                     </VerticalStackLayout>
 
-                    <!-- Crea account Button -->
-                    <Button Text="Crea nuovo account"
-                            Clicked="OnCreateAccountClicked"
-                            BackgroundColor="#1A1A1A"
-                            TextColor="White"
-                            CornerRadius="8"
-                            HeightRequest="44"
-                            Margin="0,8,0,0" />
+                    <!-- Requisiti password -->
+                    <Border BackgroundColor="{StaticResource PrimaryLight}"
+                            StrokeShape="RoundRectangle 12"
+                            StrokeThickness="0"
+                            Padding="14">
+                        <VerticalStackLayout Spacing="5">
+                            <Label Text="Requisiti password"
+                                   FontSize="12"
+                                   FontAttributes="Bold"
+                                   TextColor="{StaticResource Primary}"/>
+                            <Label Text="• Minimo 8 caratteri — Max 64"
+                                   FontSize="12" TextColor="{StaticResource Primary}"/>
+                            <Label Text="• Una maiuscola e una minuscola"
+                                   FontSize="12" TextColor="{StaticResource Primary}"/>
+                            <Label Text="• Almeno un numero (0–9)"
+                                   FontSize="12" TextColor="{StaticResource Primary}"/>
+                            <Label Text="• Un carattere speciale (!@#$...)"
+                                   FontSize="12" TextColor="{StaticResource Primary}"/>
+                        </VerticalStackLayout>
+                    </Border>
+
+                    <Button x:Name="RegisterButton"
+                            Text="Crea account"
+                            Style="{StaticResource PrimaryButton}"
+                            Clicked="OnCreateAccountClicked"/>
 
                 </VerticalStackLayout>
-            </Frame>
+            </Border>
 
         </VerticalStackLayout>
     </ScrollView>

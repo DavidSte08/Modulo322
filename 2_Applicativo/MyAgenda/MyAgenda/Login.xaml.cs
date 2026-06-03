@@ -1,3 +1,5 @@
+using MyAgenda.Services;
+
 namespace MyAgenda;
 
 public partial class Login : ContentPage
@@ -18,29 +20,32 @@ public partial class Login : ContentPage
             return;
         }
 
-        bool success = await AuthService.LoginAsync(username, password);
+        // Disabilita il bottone durante il login per evitare doppi click
+        LoginButton.IsEnabled = false;
 
-        if (success)
+        try
         {
-            AuthService.SaveCurrentUser(username);
+            bool success = await AuthService.LoginAsync(username, password);
 
-            Sessione.Username = username;
-
-            Application.Current!.MainPage = new AppShell();
+            if (success)
+            {
+                SessionService.Start(username);
+                Application.Current!.MainPage = new AppShell();
+            }
+            else
+            {
+                await DisplayAlert("Errore", "Nome utente o password non corretti.", "OK");
+            }
         }
-        else
+        finally
         {
-            await DisplayAlert("Errore", "Credenziali non valide.", "OK");
+            LoginButton.IsEnabled = true;
         }
     }
 
     private async void OnRegisterClicked(object sender, EventArgs e)
-    {
-        await Navigation.PushAsync(new Register());
-    }
+        => await Navigation.PushAsync(new Register());
 
     private async void OnForgotPasswordTapped(object sender, EventArgs e)
-    {
-        await Navigation.PushAsync(new PasswordRecupero());
-    }
+        => await Navigation.PushAsync(new PasswordRecupero());
 }
