@@ -309,3 +309,5 @@ public partial class Scuola : ContentPage
         public ObservableCollection<MateriaModel> SecondoSemestre { get; set; }
     }
 }
+//La pagina contiene prodotti generati dall ai
+//Commentato con ai quasi tutto

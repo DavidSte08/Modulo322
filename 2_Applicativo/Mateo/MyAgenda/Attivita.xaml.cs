@@ -37,7 +37,7 @@ public partial class Attivita : ContentPage
 
         CaricaDati();
 
-        AggiornaNomi();
+        
 
         calendarPicker.Date = DateTime.Today;
 
@@ -46,21 +46,7 @@ public partial class Attivita : ContentPage
         AggiornaCalendario(DateTime.Today);
     }
 
-    private void AggiornaNomi()
-    {
-        nomiPrecedenti.Clear();
-
-        foreach (AttivitaModel a in attivita)
-        {
-            if (!nomiPrecedenti.Contains(a.Nome))
-            {
-                nomiPrecedenti.Add(a.Nome);
-            }
-        }
-
-        nomePicker.ItemsSource = null;
-        nomePicker.ItemsSource = nomiPrecedenti;
-    }
+    
     private Color OttieniColoreEvento(string tipo)
     {
         switch (tipo)
@@ -93,10 +79,7 @@ public partial class Attivita : ContentPage
         {
             nome = nomeEntry.Text.Trim();
         }
-        else if (nomePicker.SelectedItem != null)
-        {
-            nome = nomePicker.SelectedItem.ToString();
-        }
+        
 
         if (string.IsNullOrWhiteSpace(nome))
         {
@@ -134,7 +117,6 @@ public partial class Attivita : ContentPage
 
         SalvaDati();
 
-        AggiornaNomi();
 
         AggiornaCalendario(calendarPicker.Date);
 
@@ -405,3 +387,5 @@ public partial class Attivita : ContentPage
         }
     }
 }
+//La pagina contiene prodotti generati dall ai
+//Commentato con ai quasi tutto

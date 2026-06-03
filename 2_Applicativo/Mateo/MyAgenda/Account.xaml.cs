@@ -201,3 +201,4 @@ public partial class Account : ContentPage
     }
 
 }
+//Commentato con ai quasi tutto
